@@ -1,0 +1,516 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21650288eaaae84894f4e5e04b6d31c, type: 3}
+  m_Name: IconLibrary
+  m_EditorClassIdentifier: 
+  entries:
+  - key: Abfluss
+    sprite: {fileID: 21300000, guid: 730959541ef601941a1083008b6071b6, type: 3}
+  - key: AK47
+    sprite: {fileID: 21300000, guid: 78ddaee86e4c3974cb3f39aae0a9a6ad, type: 3}
+  - key: Amulett_1
+    sprite: {fileID: 21300000, guid: e1aeb58b007e55f42a8ba7d4b8e96757, type: 3}
+  - key: Amulett_2
+    sprite: {fileID: 21300000, guid: bd63fff6cb4fd9b41b099b43f3c460ca, type: 3}
+  - key: Amulett_3
+    sprite: {fileID: 21300000, guid: 0a9dc206d8f6d5449a7b515ee405b23b, type: 3}
+  - key: arrow_down
+    sprite: {fileID: 21300000, guid: a42222be74474e545bd5decfc7a8749c, type: 3}
+  - key: arrow_left
+    sprite: {fileID: 21300000, guid: 446594abb3adde14d8a2e50073e05529, type: 3}
+  - key: arrow_right
+    sprite: {fileID: 21300000, guid: 837ed5b5dc0e1144088e1e7922101270, type: 3}
+  - key: arrow_up
+    sprite: {fileID: 21300000, guid: d8d9b0976bde0254b9669231c40a6f0f, type: 3}
+  - key: Aufbau
+    sprite: {fileID: 21300000, guid: 57624782b31c7c742984098198befc36, type: 3}
+  - key: Auflegen
+    sprite: {fileID: 21300000, guid: b7771ac878359bd4c8e6d15be1b36bce, type: 3}
+  - key: Aufzug
+    sprite: {fileID: 21300000, guid: 3000d564531b7524bbf591a6491153b9, type: 3}
+  - key: automatisch
+    sprite: {fileID: 21300000, guid: d16107d88b3d8c2429a85b3ef74f7c38, type: 3}
+  - key: Autoprod_Off
+    sprite: {fileID: 21300000, guid: 6037600c74beb9a4c969b4ce6fdfae69, type: 3}
+  - key: Autoprod_On
+    sprite: {fileID: 21300000, guid: af45e6449fbf9fc47b775ef15736e2a9, type: 3}
+  - key: Awp
+    sprite: {fileID: 21300000, guid: f4ccd4c9825121c46b12e0054020bfc7, type: 3}
+  - key: Axt
+    sprite: {fileID: 21300000, guid: 1a523d054fb0bad4cb6ce8c3c6034b3f, type: 3}
+  - key: Axt_1
+    sprite: {fileID: 21300000, guid: 0c5821fb566dbf04293a2b094623255f, type: 3}
+  - key: Axt_2
+    sprite: {fileID: 21300000, guid: b661d12ebb68601468d3a62d4b595a4d, type: 3}
+  - key: Axt_3
+    sprite: {fileID: 21300000, guid: ae1b421981fc2134b84123451df56552, type: 3}
+  - key: Axt_4
+    sprite: {fileID: 21300000, guid: 00f210038e87196468a8396fb902a985, type: 3}
+  - key: Axt_unq_1
+    sprite: {fileID: 21300000, guid: 9cda1386d2036a94f93f0e7431a0e997, type: 3}
+  - key: Axt_unq_2
+    sprite: {fileID: 21300000, guid: c7cf78563f628fb45899f456494790b3, type: 3}
+  - key: Axt_unq_3
+    sprite: {fileID: 21300000, guid: 8cac4118ae7aa8d4bb2b44f0786cdbcb, type: 3}
+  - key: Axt_unq_4
+    sprite: {fileID: 21300000, guid: 97c0041dee51bd942aa13449e1dd2d1e, type: 3}
+  - key: Badewanne
+    sprite: {fileID: 21300000, guid: 32f91cd6dc9b5914289d7d4d7d60795d, type: 3}
+  - key: Bar
+    sprite: {fileID: 21300000, guid: efe70a5a63899e24e88e52e55cda3112, type: 3}
+  - key: Barbetieb
+    sprite: {fileID: 21300000, guid: 985970fa4bcd88749a40cbd328b48c0f, type: 3}
+  - key: Barbetrieb
+    sprite: {fileID: 21300000, guid: 8ff6ab5cd5829294f8f4a4d6d8c0f68a, type: 3}
+  - key: Bewachen_Mittel
+    sprite: {fileID: 21300000, guid: 0d5b64aac9ddf034686962607aeacf45, type: 3}
+  - key: Bewachen_Nah
+    sprite: {fileID: 21300000, guid: 0878130d06f07fb4682e9ce6189a6ef2, type: 3}
+  - key: Bewachen_Weit
+    sprite: {fileID: 21300000, guid: ec99e7468198a684c953c3f06f7c30d6, type: 3}
+  - key: Bier
+    sprite: {fileID: 21300000, guid: 5f65f1dd2d54d9e46a3f43337b1b0099, type: 3}
+  - key: Bierfass
+    sprite: {fileID: 21300000, guid: 6487f1ed0ecd8504abf39b7afde38756, type: 3}
+  - key: Bild1
+    sprite: {fileID: 21300000, guid: a607d2a72048fc64b877bb3d91d6bc43, type: 3}
+  - key: Bild2
+    sprite: {fileID: 21300000, guid: dc053b9561860ce43abd2b3e0c0c04e3, type: 3}
+  - key: Bild3
+    sprite: {fileID: 21300000, guid: 7760419ad04d81641b0672d0af0b8b86, type: 3}
+  - key: Bild4
+    sprite: {fileID: 21300000, guid: ee4f67c22853b754cac64874ecd85bd1, type: 3}
+  - key: Bild5
+    sprite: {fileID: 21300000, guid: d5dcc1cc8e0b7bc47a427dee45393c22, type: 3}
+  - key: Bild6
+    sprite: {fileID: 21300000, guid: ed199ac0d28f63b40bff41b51d96803b, type: 3}
+  - key: Bild7
+    sprite: {fileID: 21300000, guid: cde90acbf6cc02d41b2c050a4d9274e0, type: 3}
+  - key: Bild8
+    sprite: {fileID: 21300000, guid: 7116b607430267343ab3f03c38be3583, type: 3}
+  - key: Bombe
+    sprite: {fileID: 21300000, guid: 8567be8bc24e3564b8586c4fde570b45, type: 3}
+  - key: Bordell
+    sprite: {fileID: 21300000, guid: 2bb9b3f817b171543b79e2dccd42f2ae, type: 3}
+  - key: Bowlen
+    sprite: {fileID: 21300000, guid: 5625ba4730b62f445933e44b9f696b38, type: 3}
+  - key: Bowlingbahn
+    sprite: {fileID: 21300000, guid: d4297da74bf9e014d94d4c1b123b9b29, type: 3}
+  - key: Brauerei
+    sprite: {fileID: 21300000, guid: 8802d89885e93a44ab0004d2a5a364da, type: 3}
+  - key: BuddelnG
+    sprite: {fileID: 21300000, guid: 81023784daf506e44ade9f1e3bba54ff, type: 3}
+  - key: BuddelnH0
+    sprite: {fileID: 21300000, guid: 14ec889cfa10a1043b9c1e53cd2e867f, type: 3}
+  - key: BuddelnH1
+    sprite: {fileID: 21300000, guid: db4373a47433f8e4cb8d2c1d92ac438c, type: 3}
+  - key: BuddelnH2
+    sprite: {fileID: 21300000, guid: 6902259a4c12b8948aa18ffc04e2d2a8, type: 3}
+  - key: BuddelnH3
+    sprite: {fileID: 21300000, guid: 286a06479a9157840a324cd17ff429f8, type: 3}
+  - key: BuddelnUndo
+    sprite: {fileID: 21300000, guid: 3152b67ce11223440a9cac25668c9e4b, type: 3}
+  - key: Buechse
+    sprite: {fileID: 21300000, guid: bfe4e0696bd63a240bf2294428d1e2a8, type: 3}
+  - key: Couchtisch_a
+    sprite: {fileID: 21300000, guid: 24e0e5bdc63fed345b49079b769c6ff6, type: 3}
+  - key: Couchtisch_b
+    sprite: {fileID: 21300000, guid: 060dc60494787434898c4203d445e4d6, type: 3}
+  - key: Dampfaufzug
+    sprite: {fileID: 21300000, guid: 14fb4f3d20415014f837bb55b974cc09, type: 3}
+  - key: Dampfhammer
+    sprite: {fileID: 21300000, guid: a469754ca8d109d458a32ff258e24de2, type: 3}
+  - key: Dampfmaschine
+    sprite: {fileID: 21300000, guid: f3b1b3beff9b138448ad0779e52f0bfa, type: 3}
+  - key: Deagle
+    sprite: {fileID: 21300000, guid: 26e1d2e1eaa02124aa60c12909dbde87, type: 3}
+  - key: Disco
+    sprite: {fileID: 21300000, guid: ed5a1da297480bf46a53b60ee09eaa95, type: 3}
+  - key: Dojo
+    sprite: {fileID: 21300000, guid: 3b320fc71a1c9514cbfcc6373a5f85fb, type: 3}
+  - key: Dolch_1
+    sprite: {fileID: 21300000, guid: 2a07652c44775364a92c09a66e1a0b51, type: 3}
+  - key: Dolch_2
+    sprite: {fileID: 21300000, guid: d9af2d61a640a944699c947c8c6cc394, type: 3}
+  - key: Drachenschuppe
+    sprite: {fileID: 21300000, guid: 13db2f4d5b3616f419e944fa942ce75e, type: 3}
+  - key: Drachen_ei
+    sprite: {fileID: 21300000, guid: db269428cb60bff428dcf889a14c828c, type: 3}
+  - key: Dreherei
+    sprite: {fileID: 21300000, guid: 4aa454114c18b3148b4eff25aef9d542, type: 3}
+  - key: Duals
+    sprite: {fileID: 21300000, guid: 9783ca0cc1881db4ba13d506c4f10b17, type: 3}
+  - key: Eisen
+    sprite: {fileID: 21300000, guid: 14974856f97df6945b1fae95dcd09da4, type: 3}
+  - key: Eisenerz
+    sprite: {fileID: 21300000, guid: 862eddab019a0bb4e83c8411ae28a7b4, type: 3}
+  - key: Energie
+    sprite: {fileID: 21300000, guid: 9bc202b9231f06840afd98b41086df5e, type: 3}
+  - key: energyoff
+    sprite: {fileID: 21300000, guid: ab147068e88a97d4081b1eaf8e27d598, type: 3}
+  - key: energyon
+    sprite: {fileID: 21300000, guid: 25b19d8410e6b7b4392ef20b48c2f768, type: 3}
+  - key: Farm
+    sprite: {fileID: 21300000, guid: 2e9d762926ba6ea4687c3e8c2d4e9cc6, type: 3}
+  - key: Fernseher
+    sprite: {fileID: 21300000, guid: 87b792bb3373b924d9020bad3f3b7ecc, type: 3}
+  - key: Feuerstelle
+    sprite: {fileID: 21300000, guid: 5d17c7e289d85cd4fbde2be88b9e8e91, type: 3}
+  - key: Fitnessstudio
+    sprite: {fileID: 21300000, guid: e9270cfae879d2d458838f11913852b0, type: 3}
+  - key: Flagge
+    sprite: {fileID: 21300000, guid: 18c69a7f365044b47a8f840b3ebc304a, type: 3}
+  - key: Fruchtbarkeitstrank
+    sprite: {fileID: 21300000, guid: 956fa9ee72d7b824ab7b0a740831d919, type: 3}
+  - key: Geisel
+    sprite: {fileID: 21300000, guid: fdef29f144949ff479b32af94a34223e, type: 3}
+  - key: Gleipnir
+    sprite: {fileID: 21300000, guid: 3cb7736d5301dac498433ee8b3822d4c, type: 3}
+  - key: GleipnirHammer
+    sprite: {fileID: 21300000, guid: a31d96963658ebc4981fecbc27b49adf, type: 3}
+  - key: Gold
+    sprite: {fileID: 21300000, guid: 318a0c8788af08e419433d0b3a4fc30c, type: 3}
+  - key: Golderz
+    sprite: {fileID: 21300000, guid: d4b4b8d12adcd454595432961da35e08, type: 3}
+  - key: Gourmetsuppe
+    sprite: {fileID: 21300000, guid: da327d853f4727541af0cf3152a79ccc, type: 3}
+  - key: Grabstein
+    sprite: {fileID: 21300000, guid: 9871d68fd8e699e40962894c7b8b5b9a, type: 3}
+  - key: Grenzstein
+    sprite: {fileID: 21300000, guid: abdb2447a8776244d9e27be8e20dbf3c, type: 3}
+  - key: GrillHamster
+    sprite: {fileID: 21300000, guid: 4072aa4bea34ed14591ac67c7cddd55e, type: 3}
+  - key: GrillPilz
+    sprite: {fileID: 21300000, guid: 3e726e7e65cbd654aa7669768cd6ef9f, type: 3}
+  - key: Grosser_Heiltrank
+    sprite: {fileID: 21300000, guid: 9ec220bae2cdfba46b66617a57cb6abf, type: 3}
+  - key: Grosse_Holzkiepe
+    sprite: {fileID: 21300000, guid: c3c5f27af5e8e6341aab2f22f37e43c1, type: 3}
+  - key: Hammer
+    sprite: {fileID: 21300000, guid: 86af8d7bfcfed2b47848a9fd92195388, type: 3}
+  - key: Hamster
+    sprite: {fileID: 21300000, guid: e9c9e8f52c4171e448e38d142dad73a0, type: 3}
+  - key: Hamsterkarren
+    sprite: {fileID: 21300000, guid: 55946d91376ee394596b8308614d14e1, type: 3}
+  - key: Hamstershake
+    sprite: {fileID: 21300000, guid: dbc322d21cf0ed3409279be585aa6036, type: 3}
+  - key: Hauklotz
+    sprite: {fileID: 21300000, guid: 172819a799467124790c920f867851f6, type: 3}
+  - key: Heilen
+    sprite: {fileID: 21300000, guid: 9dec35348ce427c49b6366a7fd67bb7c, type: 3}
+  - key: Heiltrank
+    sprite: {fileID: 21300000, guid: a84eab4eda244604ba45b9025dedb106, type: 3}
+  - key: Hochofen
+    sprite: {fileID: 21300000, guid: f6b8a04b9630053488a1fb4cc580cb1c, type: 3}
+  - key: Holzaufzug
+    sprite: {fileID: 21300000, guid: 7561be1d2802a1e44804b5a4a26eaae8, type: 3}
+  - key: Holzbett
+    sprite: {fileID: 21300000, guid: e96c0592b5a228e48a9ce7ccbcec5a89, type: 3}
+  - key: Holzkiepe
+    sprite: {fileID: 21300000, guid: 9ea0b9f0f3a7b7b448f1958eee6349b7, type: 3}
+  - key: Holzschild
+    sprite: {fileID: 21300000, guid: f8840e79a74d34a4eb28cc5bedcdb0ef, type: 3}
+  - key: Holztuer
+    sprite: {fileID: 21300000, guid: 596d4a0e1b7a0f64ca138eeea920a825, type: 3}
+  - key: Hoverboard
+    sprite: {fileID: 21300000, guid: 3ac14dba7d754da4ba00035f1459b768, type: 3}
+  - key: Industriebad
+    sprite: {fileID: 21300000, guid: 20adb0fa089defd4d9a6673067d44c23, type: 3}
+  - key: Industriekueche
+    sprite: {fileID: 21300000, guid: f74b1ae3d42e76c45b9d6d4c8f199221, type: 3}
+  - key: Industrieschlafzimmer
+    sprite: {fileID: 21300000, guid: d90d453deb9bd5e48b76e147d272d754, type: 3}
+  - key: Industriewohnzimmer
+    sprite: {fileID: 21300000, guid: 9abf98bf5ddefe642a9b7099630247cb, type: 3}
+  - key: Jungbrunnentrank
+    sprite: {fileID: 21300000, guid: b76a8fbb78ee54e43942fc132fb5ab7a, type: 3}
+  - key: Kamera
+    sprite: {fileID: 21300000, guid: c9bbf50d497832247bcb0a40b2ac924c, type: 3}
+  - key: Karte
+    sprite: {fileID: 21300000, guid: add328da54d12a3448c37ce5f4e4eebe, type: 3}
+  - key: Kettensaege
+    sprite: {fileID: 21300000, guid: 44822afe1edfbb240aa3cf9be1beb742, type: 3}
+  - key: Keule
+    sprite: {fileID: 21300000, guid: 8ce18eaa6f17101418e4246a336593c3, type: 3}
+  - key: Kisten_einlagern
+    sprite: {fileID: 21300000, guid: 2286ffaa38525e544a3c10d4c1edbdc2, type: 3}
+  - key: Kleiner_Heiltrank
+    sprite: {fileID: 21300000, guid: 8f6c90948b43ea7498e562be8a1cf44e, type: 3}
+  - key: Kohle
+    sprite: {fileID: 21300000, guid: 05cf39b37c52ef24394c0d44356ebe9e, type: 3}
+  - key: Krankenhaus
+    sprite: {fileID: 21300000, guid: 46783629e64dd7049adf183322dc6ad0, type: 3}
+  - key: Kristall
+    sprite: {fileID: 21300000, guid: 359c0ba8a34f7c644a0a467b8cf0b31a, type: 3}
+  - key: Kristallaufzug
+    sprite: {fileID: 21300000, guid: aaaa90b21b42b04498c1fc191657edc5, type: 3}
+  - key: Kristallerz
+    sprite: {fileID: 21300000, guid: f643a774734b2c446a103f78baa52c73, type: 3}
+  - key: Kristallschild
+    sprite: {fileID: 21300000, guid: 979e5aad7c33c324eb551784b9bfe3d7, type: 3}
+  - key: Kristallschmiede
+    sprite: {fileID: 21300000, guid: 1887a1d24420d5640b4cbfb5f9403ed9, type: 3}
+  - key: Kristallstrahl
+    sprite: {fileID: 21300000, guid: 277a7ff76ce088c428bf2ae76812edba, type: 3}
+  - key: Kristalltuer
+    sprite: {fileID: 21300000, guid: 3cb276628546284489cb00a4c8d1606b, type: 3}
+  - key: Kungfu
+    sprite: {fileID: 21300000, guid: a65afd3ac5378774eb0fc39f5bc8cd49, type: 3}
+  - key: Labor
+    sprite: {fileID: 21300000, guid: d1be925d2f389e34bb56bfb37d235fca, type: 3}
+  - key: Lager
+    sprite: {fileID: 21300000, guid: ae7d91a3cb2bdf542a56698f0ca749e3, type: 3}
+  - key: Laufrad
+    sprite: {fileID: 21300000, guid: d19623bf1226db543a46ab2b06765778, type: 3}
+  - key: Leiter
+    sprite: {fileID: 21300000, guid: 764e878fdbb764d41b5b4acbc5c16f1e, type: 3}
+  - key: Leiter_Kristall
+    sprite: {fileID: 21300000, guid: c780070d95575804bae9894a9c4fe91f, type: 3}
+  - key: Leiter_Metall
+    sprite: {fileID: 21300000, guid: 507e869d4070ffc4c98b389b08c69b67, type: 3}
+  - key: Lichtschwert
+    sprite: {fileID: 21300000, guid: b00ec4e9e5d54e14cbe116a6e9fba915, type: 3}
+  - key: Liebesdienst
+    sprite: {fileID: 21300000, guid: ad8e448a582c8c04abb3155149f9cbc6, type: 3}
+  - key: Liebestrank
+    sprite: {fileID: 21300000, guid: b779e42ebbaf8c94488605af0e0b1119, type: 3}
+  - key: Luxusbad
+    sprite: {fileID: 21300000, guid: 027c62b7110383f41ab9ee27ece88838, type: 3}
+  - key: Luxuskueche
+    sprite: {fileID: 21300000, guid: c207b5800dfc37a4fa309059852ea188, type: 3}
+  - key: Luxusschlafzimmer
+    sprite: {fileID: 21300000, guid: 5a881d4cab03d0d488f622710355af13, type: 3}
+  - key: Luxuswohnzimmer
+    sprite: {fileID: 21300000, guid: 2a67f12427c4e89438a088459b2e1041, type: 3}
+  - key: M3_super_90
+    sprite: {fileID: 21300000, guid: 400f67af65b3207449d78c7e79d221fd, type: 3}
+  - key: M4
+    sprite: {fileID: 21300000, guid: c34ed73ef4dafe5479abb7512568f7b1, type: 3}
+  - key: Metallschild
+    sprite: {fileID: 21300000, guid: 9692f884f2def5a4e94186a41f3095f7, type: 3}
+  - key: Metalltuer
+    sprite: {fileID: 21300000, guid: 65f3abc3fc206f449bdeb94cf9d2f8c1, type: 3}
+  - key: Mineralien_einlagern
+    sprite: {fileID: 21300000, guid: 8608552d182534f4aa9de37534c135ab, type: 3}
+  - key: Mittelalterbad
+    sprite: {fileID: 21300000, guid: 68051b8e56f100642bceaa8ed96b0a68, type: 3}
+  - key: Mittelalterkueche
+    sprite: {fileID: 21300000, guid: 59483d6ffe39f574aa7b6081d1bce25d, type: 3}
+  - key: Mittelalterschlafzimmer
+    sprite: {fileID: 21300000, guid: fd239021f934b474db63be19ab8d2d79, type: 3}
+  - key: Mittelalterwohnzimmer
+    sprite: {fileID: 21300000, guid: 9412e28ccde84f944b5d00f5b9feffc9, type: 3}
+  - key: Mitteler_Heiltrank
+    sprite: {fileID: 21300000, guid: beb8332906cc6a3469030b2be6e574a8, type: 3}
+  - key: MP5
+    sprite: {fileID: 21300000, guid: 6654d04ea046a024696615fa4c16bec3, type: 3}
+  - key: Muetze_Brains
+    sprite: {fileID: 21300000, guid: 5ade9b4548c8c974eb72760139e39b72, type: 3}
+  - key: Muetze_DMauls
+    sprite: {fileID: 21300000, guid: b7b2a3619ebbc734db5680d77422f7a8, type: 3}
+  - key: Muetze_Knockers
+    sprite: {fileID: 21300000, guid: ca7e2b54007f9fc409d210910f5eae0f, type: 3}
+  - key: Muetze_Peacer
+    sprite: {fileID: 21300000, guid: bd6912d105f97d441909d05356a09855, type: 3}
+  - key: Nahrung_einlagern
+    sprite: {fileID: 21300000, guid: b0bed8ccaf7c80f40b5e03be8d30311c, type: 3}
+  - key: offen
+    sprite: {fileID: 21300000, guid: 8ed098361cc2c284a91148ceb683cf52, type: 3}
+  - key: packtobox
+    sprite: {fileID: 21300000, guid: cf62ed6557ebbb34a89155349fc51d5d, type: 3}
+  - key: Para
+    sprite: {fileID: 21300000, guid: 1cc4be28095206842980ccd7ad997c22, type: 3}
+  - key: PfeilUndBogen
+    sprite: {fileID: 21300000, guid: bd8651db0c2fb4c4caf2b45fa15bb987, type: 3}
+  - key: Pilz
+    sprite: {fileID: 21300000, guid: 273c7e03b75d50748a1ffd5e0d4a9f9e, type: 3}
+  - key: Pilzbrot
+    sprite: {fileID: 21300000, guid: 42fd964a89e5de543b77d57db78e3a97, type: 3}
+  - key: Pilze_einlagern
+    sprite: {fileID: 21300000, guid: 81a343fe9c667c7489bd5d97244daa26, type: 3}
+  - key: Pilzhut
+    sprite: {fileID: 21300000, guid: 1a954275fcce4454e93e0abd6e41e910, type: 3}
+  - key: Pilzschnaps
+    sprite: {fileID: 21300000, guid: 623e84b9d69f1f14a9455305368d6ff8, type: 3}
+  - key: Pilzstamm
+    sprite: {fileID: 21300000, guid: 0206b2e73f2e1e242af4200b1d056a59, type: 3}
+  - key: Plattmachfalle
+    sprite: {fileID: 21300000, guid: 09a2056e0a30d374ca1521954af20f4e, type: 3}
+  - key: Presslufthammer
+    sprite: {fileID: 21300000, guid: c3e23e504e3bd9a4ca1a6788ecc3d31a, type: 3}
+  - key: Raupe
+    sprite: {fileID: 21300000, guid: bb42d09e41dcb9449999816ef8c82e9a, type: 3}
+  - key: Raupenschleimkuchen
+    sprite: {fileID: 21300000, guid: 745fe309eb2dfc841afbbb7d5a7301dd, type: 3}
+  - key: Raupensuppe
+    sprite: {fileID: 21300000, guid: b9faace334feaa54ca2593b4de031116, type: 3}
+  - key: Reaktor
+    sprite: {fileID: 21300000, guid: 762e508e73aa3e141af84015cf450f40, type: 3}
+  - key: Reithamster
+    sprite: {fileID: 21300000, guid: 84d19c68bb194ac4ab90a39f7f985048, type: 3}
+  - key: repair
+    sprite: {fileID: 21300000, guid: 898a3c7844be43c4a835abd5cc4c47d2, type: 3}
+  - key: Ring_Der_Erde
+    sprite: {fileID: 21300000, guid: f98400ffa128385478e17f1e8ecc293f, type: 3}
+  - key: Ring_Der_Luft
+    sprite: {fileID: 21300000, guid: 54a30dea45c7ec34da825536555a0912, type: 3}
+  - key: Ring_Der_Magie
+    sprite: {fileID: 21300000, guid: 92a62fd927711b54685b09ff02af05fb, type: 3}
+  - key: Ring_Des_Feuers
+    sprite: {fileID: 21300000, guid: 6e7e47f23ebe2d943a6550b650c7dc06, type: 3}
+  - key: Ring_Des_Lebens
+    sprite: {fileID: 21300000, guid: f72aa89c62ed064489aff97d7555f225, type: 3}
+  - key: Ring_Des_Wassers
+    sprite: {fileID: 21300000, guid: e232066d3d3035d4084d9e03e35a54b1, type: 3}
+  - key: Rohmineralien_einlagern
+    sprite: {fileID: 21300000, guid: 1f567875fb73cdf4e892655ed30b52c4, type: 3}
+  - key: Saegewerk
+    sprite: {fileID: 21300000, guid: beb086f4b94e1764c9215eca262f79e1, type: 3}
+  - key: Schalter
+    sprite: {fileID: 21300000, guid: b7002ced8b1dfe24bae6ea005d97aadc, type: 3}
+  - key: Schatzbuch
+    sprite: {fileID: 21300000, guid: d245d6257d242fc41a4610608a7d3b67, type: 3}
+  - key: Schatzkiste
+    sprite: {fileID: 21300000, guid: 0a7b5d93a8119924280f689561149b0a, type: 3}
+  - key: Schatztonne
+    sprite: {fileID: 21300000, guid: d8dccb4cc2c15834aa9a93802eb5b6cf, type: 3}
+  - key: Schild
+    sprite: {fileID: 21300000, guid: 361e203cbd6a6a64c8f65ae3c5af8306, type: 3}
+  - key: Schild_1
+    sprite: {fileID: 21300000, guid: e7167fc9ef1b750428e768914136d69d, type: 3}
+  - key: Schild_2
+    sprite: {fileID: 21300000, guid: 561837f29d1779e468b81b39d944280b, type: 3}
+  - key: Schild_3
+    sprite: {fileID: 21300000, guid: b35a5fee5b779224ebf6f2fb76f83622, type: 3}
+  - key: Schild_unq_1
+    sprite: {fileID: 21300000, guid: b9c70c3cd92f2e44fb512965eab297a8, type: 3}
+  - key: Schild_unq_2
+    sprite: {fileID: 21300000, guid: 6ffeb0979690c0e459bb070402624df8, type: 3}
+  - key: Schleiferei
+    sprite: {fileID: 21300000, guid: 2b2698186e663f1439bf324abe503805, type: 3}
+  - key: Schmelze
+    sprite: {fileID: 21300000, guid: e6233983b46aae5449f4d582d5626a15, type: 3}
+  - key: Schmiede
+    sprite: {fileID: 21300000, guid: 2085e7fa879c9d9469eb4836543bb96b, type: 3}
+  - key: Schreinerei
+    sprite: {fileID: 21300000, guid: 7660363f6a08e28448a3eea8164225ab, type: 3}
+  - key: Schule
+    sprite: {fileID: 21300000, guid: 3ceb5cf09ffbf3c4b82e8200273a7cde, type: 3}
+  - key: Schusswaffen
+    sprite: {fileID: 21300000, guid: cccd071483ac5e6479ea04d315e2203d, type: 3}
+  - key: Schwert
+    sprite: {fileID: 21300000, guid: 803182da826559f4789ea8fd26fe2dd7, type: 3}
+  - key: Schwertkampf
+    sprite: {fileID: 21300000, guid: 3c44ca6c36c75554d9f9bd9e5bac41a9, type: 3}
+  - key: Schwert_1
+    sprite: {fileID: 21300000, guid: 67040b9cab630b2458b93caee053582f, type: 3}
+  - key: Schwert_2
+    sprite: {fileID: 21300000, guid: 5ad9b2376662caf4a843bd282b183c1a, type: 3}
+  - key: Schwert_3
+    sprite: {fileID: 21300000, guid: 4fe5ad066b6d58848869650c294471cb, type: 3}
+  - key: Schwert_4
+    sprite: {fileID: 21300000, guid: 4bc8e96393e241645938e770be78be5f, type: 3}
+  - key: Spitzhacke
+    sprite: {fileID: 21300000, guid: 3477dc077c106814abc817c2179cf670, type: 3}
+  - key: Stein
+    sprite: {fileID: 21300000, guid: 7b908ceb18051ed49abbcb3603c9a535, type: 3}
+  - key: SteinfalleMedusa
+    sprite: {fileID: 21300000, guid: f5d8a5b303e4b914496e70021fa2ac16, type: 3}
+  - key: Steinmetz
+    sprite: {fileID: 21300000, guid: 112c05f10c1797d4392bf97441ec9dcf, type: 3}
+  - key: Steinschleuder
+    sprite: {fileID: 21300000, guid: f52eebe5bddba6a408a48456f4998004, type: 3}
+  - key: Steintuer
+    sprite: {fileID: 21300000, guid: 6dd34f7f05dd24848947581936ae71d5, type: 3}
+  - key: Streitaxt
+    sprite: {fileID: 21300000, guid: 109d63ca01fd18e45892da059333cdb4, type: 3}
+  - key: S_Arbeiszeit
+    sprite: {fileID: 21300000, guid: ff2afc6ed7d485f489f75cb326f066cf, type: 3}
+  - key: S_Arbeiszeit2
+    sprite: {fileID: 21300000, guid: 21255c651d07e654baa143d7d7c63503, type: 3}
+  - key: S_Autoprodoff
+    sprite: {fileID: 21300000, guid: cf749bc947937a0479979068418ab6b0, type: 3}
+  - key: S_Freizeit
+    sprite: {fileID: 21300000, guid: 1d8f24741580c2d4fb2516b9d8898516, type: 3}
+  - key: S_Gelock
+    sprite: {fileID: 21300000, guid: dcf628805cd545a43b4a83a3d57e89fb, type: 3}
+  - key: S_packtobox
+    sprite: {fileID: 21300000, guid: 69aeaf3615327e34b8ab7048537b3e64, type: 3}
+  - key: S_Reperatur
+    sprite: {fileID: 21300000, guid: f71da4391977cda408323c40ab17c570, type: 3}
+  - key: S_switchoff
+    sprite: {fileID: 21300000, guid: 5fdcb07b4195dbf4ab51c3b6afe26d1d, type: 3}
+  - key: S_switchon
+    sprite: {fileID: 21300000, guid: b7fb267865e33454aae2a43449da7483, type: 3}
+  - key: Taucherglocke
+    sprite: {fileID: 21300000, guid: adc76a4e094cd4745b5ffbc7c8c3a2da, type: 3}
+  - key: Tempel
+    sprite: {fileID: 21300000, guid: 337a8977b53d2f1498223777c2d39c10, type: 3}
+  - key: Theater
+    sprite: {fileID: 21300000, guid: c6a31bf4b7934214695404336237e32b, type: 3}
+  - key: Theatervorstellung
+    sprite: {fileID: 21300000, guid: 58cd82db3b4ae584ea4694ba5d08c06c, type: 3}
+  - key: Tischlerei
+    sprite: {fileID: 21300000, guid: 328b21feb997ba0468308a22e4584c65, type: 3}
+  - key: Titanic_abpumpen
+    sprite: {fileID: 21300000, guid: d9c3b44b276102245a5f573d58f54f3b, type: 3}
+  - key: Trainingsdummy
+    sprite: {fileID: 21300000, guid: 74139d15d4b03b24688c5d25cc3d2246, type: 3}
+  - key: Turbine
+    sprite: {fileID: 21300000, guid: 498423e0872c38e45b202bfc541ae8db, type: 3}
+  - key: unpack
+    sprite: {fileID: 21300000, guid: e63115ad2376c9d48bc839f96de326b6, type: 3}
+  - key: Unsichtbarkeitstrank
+    sprite: {fileID: 21300000, guid: 53202de1c1e6acb44aa66a82ff6dfa1a, type: 3}
+  - key: Unterricht
+    sprite: {fileID: 21300000, guid: 3507d6894533aa042a89be2c891980ca, type: 3}
+  - key: Unverwundbarkeitstrank
+    sprite: {fileID: 21300000, guid: e115c910736e46a4382567198af2450c, type: 3}
+  - key: verschlossen
+    sprite: {fileID: 21300000, guid: 81f1158cdc77261458ff544544df60fe, type: 3}
+  - key: Verteidigung
+    sprite: {fileID: 21300000, guid: c013493516c48d34490b3591fcb91050, type: 3}
+  - key: Wachhaus
+    sprite: {fileID: 21300000, guid: 2a39fef69a9f61d499aa4c6ff98f0da1, type: 3}
+  - key: Waffenfabrik
+    sprite: {fileID: 21300000, guid: 25ce7fca5228bad44933b1525787e2cc, type: 3}
+  - key: Waffenschmiede
+    sprite: {fileID: 21300000, guid: f5ad8be6d63e59f40b61cd0c71e319d1, type: 3}
+  - key: Waffen_Werkzeug_und_Traenke_einlagern
+    sprite: {fileID: 21300000, guid: 845d11bb19bc9ea408b5ede58603017e, type: 3}
+  - key: Wasserrad
+    sprite: {fileID: 21300000, guid: c06d0f47c91dbc64399e9049ea4202de, type: 3}
+  - key: Weiche_1
+    sprite: {fileID: 21300000, guid: ee5195b469eef1b43b7f0fe1d3d66805, type: 3}
+  - key: Weiche_2
+    sprite: {fileID: 21300000, guid: 27f507fe073c3d644a5a5da1556e198a, type: 3}
+  - key: Weiche_3
+    sprite: {fileID: 21300000, guid: 1ad329940f002ab4ca5bf19846a07380, type: 3}
+  - key: Weiche_4
+    sprite: {fileID: 21300000, guid: 0ece819dd7462d949948db1b8f02de46, type: 3}
+  - key: Wiederbelebung
+    sprite: {fileID: 21300000, guid: 6e4c8622046879547a1faa85a7f82d28, type: 3}
+  - key: xoverlay_Crossout
+    sprite: {fileID: 21300000, guid: 91848dac60d9e204c99c7bfb525c8752, type: 3}
+  - key: xoverlay_question
+    sprite: {fileID: 21300000, guid: be843e88159d1624babe81467bf1a63b, type: 3}
+  - key: xoverlay_switchoff
+    sprite: {fileID: 21300000, guid: 69f4731666ab36c4ca9b640223231fe7, type: 3}
+  - key: xoverlay_switchon
+    sprite: {fileID: 21300000, guid: 4f061b672ff41a24396a18abed2e6139, type: 3}
+  - key: Zelt
+    sprite: {fileID: 21300000, guid: 69435aae7a3b66f4e94e5760c90cf9ab, type: 3}
+  - key: Zipfelmuetze
+    sprite: {fileID: 21300000, guid: 36cc0114eec345a458e3a226f4e9b810, type: 3}
+  - key: Zweihandkampf
+    sprite: {fileID: 21300000, guid: a115bb2c1e562534ab8fbb0c92476e27, type: 3}
+  overrides: []

@@ -1,0 +1,8 @@
+{
+  "_comment": "dataRoot = the original game's data folder (contains Scripts/, BlockDB2.BDB, ...). Use forward slashes. A diggles_config.json next to the executable (or in the project root in the editor) overrides this file. locale: leave empty to detect the text language from the data, or force e.g. \"ru\". baseLightMin (0..1) and classLightCap (0..4) are lighting tuning knobs; the DigglesTuning component can save them here. remoteConsolePort: loopback TCP port of the developer console (0 disables).",
+  "dataRoot": "C:/Program Files (x86)/Steam/steamapps/common/Diggles The Myth of Fenris/data",
+  "locale": "",
+  "baseLightMin": 0.6000000238418579,
+  "classLightCap": 0.5,
+  "remoteConsolePort": 47810
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "release": {
+    "id": "steam-2.1.1.10-en",
+    "distribution": "Steam",
+    "originalExecutableVersion": "2.1.1.10",
+    "locale": "en"
+  },
+  "requiredDirectories": [
+    "3db",
+    "Ground",
+    "GUI",
+    "Scripts",
+    "Sound",
+    "Templates",
+    "Texture"
+  ],
+  "files": [
+    {
+      "path": "BlockDB2.BDB",
+      "size": 37045082,
+      "sha256": "13d06172ae42a42657c10fe6007c8213fc525a7fde8132fe0041f48c9507b856"
+    },
+    {
+      "path": "sphere.dat",
+      "size": 3072,
+      "sha256": "044611f98f3dd48ba14c939151c209499e1918c40ed30765142b00ff282a7360"
+    },
+    {
+      "path": "systeminit.tcl",
+      "size": 2590,
+      "sha256": "d950fdc7377e0399a10c1eb1ca4cc85966dbd047896f72ad6d99280b2418df13"
+    },
+    {
+      "path": "Scripts/init/animinit.tcl",
+      "size": 13399,
+      "sha256": "6851e03b0c7f2e69c6eeec6c8ba3a8c2cf46ffad0cc42ffe4957c3598c8f2f9d"
+    },
+    {
+      "path": "Scripts/gameplay/Campaign.tcl",
+      "size": 7120,
+      "sha256": "62f9a6542150e2272d2638a7130ef4ccbcef569863a86d44b2a9a50200d8d696"
+    },
+    {
+      "path": "Scripts/text/talk/commontalk_en.tcl",
+      "size": 14779,
+      "sha256": "b5d9046e6849b58df85338416f82134ddfa0f4e630065fb5980edd95348916b9"
+    }
+  ]
+}

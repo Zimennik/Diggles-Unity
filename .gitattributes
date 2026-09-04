@@ -1,0 +1,11 @@
+* text=auto
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.png binary
+*.tga binary
+*.ttf binary
+*.otf binary
+*.dll binary
+*.mixer text eol=lf

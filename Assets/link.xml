@@ -1,0 +1,9 @@
+<linker>
+  <!-- Mono resolves Encoding.GetEncoding(1252) by REFLECTION into the I18N
+       assemblies (Assets/Plugins/I18N*.dll); nothing references them statically,
+       so any managed stripping level would drop them and the standalone player
+       dies at boot with "NotSupportedException: Encoding 1252 data could not be
+       found" (OriginalSave* static ctors). -->
+  <assembly fullname="I18N" preserve="all"/>
+  <assembly fullname="I18N.West" preserve="all"/>
+</linker>

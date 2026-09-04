@@ -1,0 +1,1709 @@
+
+
+Wiggles Tcl Commands
+
+Wiggles Tcl Commands
+all
+// action adaptive_sound add_attrib add_expattrib add_owner_attrib ai ai_getintrudergnomes ai_getintruderprods ai_getownerid ai_getpossibleinventions ai_getprodlocations ai_gnomepop_getcount ai_gnomepop_getlist ai_gnomepop_getobj ai_gnomepop_getpos ai_gnomepopscount ai_log ai_nextgnomepop ai_nextprodpop ai_npring ai_prodpop_getcount ai_prodpop_getlist ai_prodpop_getobj ai_prodpop_getpos ai_prodpopscount ai_setbuildup ai_setpack ai_tickhandler ai_validlocation auto_choose_gender auto_choose_workingtime autoloadlevel blow_particlesource calc_text_time call call_method call_method_static callnc camctrlmapping camera_set cancel_fade cave_skin chack_weapon_exp change_light change_particlesource check_energy check_ghost_coll check_method class_collosion class_defaultanim class_defaultmaterial class_defaulttxtanim class_disablescripting class_fightdist class_flagoffset class_light class_objsnapclass class_physcategory class_physic class_snaptowall class_viewinfog ClassID ClassInfo ClassList ClassName clone_event create_doorlogic create_elevatorlogic create_ladderlogic create_particlesource cwd db_animlength db_findanim db_load db_search def_attrib def_class def_event def_hp_ratio def_idiobjclass def_texture del delete_laserbeams delete_lightning delete_transportlogic destruct dig_apply dig_mark dig_next dig_resetid dist_between elf event_generator event_get evtgen_attrib exec_deferred fairy_move fight_action fight_map_class2db fight_setactions fight_setactions_ballistic fight_setactions_strikeback fight_setactions_training fight_weapon fight_weapon_kombi fincr find_free_place find_free_place_self flush_all_textures free_particlesource gamedelayannounce gameisloading gameload gamesave gamestats gametime generate_color_variation get_activegameplay get_alternateanimdb get_angle_num4 get_anglexz get_attack_pos get_attackinprogress get_attrib get_attrib_display_name get_attrib_names get_autolight get_ballisticresult get_best_weapon get_bestexp get_boxed get_brightness get_buildupstate get_camerafollowdist get_cameramoving get_class_category get_class_era get_class_flags get_class_name get_class_type get_classaniminfo get_climbability get_cloaked get_collision get_contrast get_diedinfight get_digedge get_diplomacy get_energy get_energysourceload get_energystore get_escape_pos get_escape_value get_eventenabled get_expattrib get_fill get_forceipol get_framevel get_fsource get_ftype get_gnomeposition get_hmap get_hoverable get_ingame_loading get_instore get_invulnerable get_light get_linked_to get_linkpos get_linkrot get_lmap_blue get_lmap_green get_lmap_light get_lmap_red get_local_player get_lock get_logactions get_map_height get_map_width get_mapedit get_material get_max_fow get_maxprodera get_mpstartpos get_next_relocobj get_obj_logicfogskip get_obj_logicskip get_objclass get_objectcollision get_objgender get_objinfo get_objname get_objownertype get_objrace get_objtype get_owner get_owner_attrib get_owner_attrib_list get_ownerrace get_pathlength get_pathrandflags get_physic get_place get_place_info get_place_long get_placesnapmode get_player_color get_pos get_posbottom get_posx get_posy get_posz get_processactions get_prod_buildup get_prod_directevents get_prod_enabled get_prod_exclusivemode get_prod_materialneed get_prod_ownerstrength get_prod_pack get_prod_schedule get_prod_slot_buildable get_prod_slot_cnt get_prod_slot_inventable get_prod_slot_invented get_prod_slot_list get_prod_switchmode get_prod_task_list get_prod_toolneed get_prod_total_task_cnt get_prod_unpack get_prodalloclock get_prodautoschedule get_ref get_rel_pos get_remaining_sparetime get_rendermaterial get_rot get_rotx get_roty get_rotz get_selectable get_selectedobject get_sequenceactive get_sequencebreaked get_shield_class get_snaptowall get_storable get_system_name get_undeletable get_user_groups get_vectorxz get_vel get_velcomp get_view get_viewinfog get_visibility get_walkresult get_waterheight get_weapon_class get_weapon_id get_weapon_pose get_weapon_range get_worktime gethours gettime global_inv_rem gnome_announce_dig gnome_failed_work gnome_idle gnome_stopped_work ground_fix ground_pos gui_new_game handle_event has_cmap hceil hf2i hfloor hi2f hide_obj_ghost hmax ">hmax hmin ">hmin horizon_clear horizon_rem horizon_set in_class_def inc_playerdigmarkid info_end_prod info_progress_prod info_start_prod inherit init_techtree inputmode inv_add inv_check inv_cnt inv_cnt_raw inv_find inv_find_obj inv_find_raw inv_get inv_get_raw inv_getsize inv_list inv_rem irandom is_contained is_dig_marked is_selected is_wearing_pannier isunderwater keybind land laser laserbeam layout lcount lg_add_preset lg_addfilterclass lg_dec_templatecount lg_get_level lg_get_objcount lg_get_temp_size lg_mark_area lg_set_area lg_set_callback lg_set_leveltype lg_set_objcount lg_set_starttemplate lg_set_starttemplatepro lg_set_templategroup lg_set_templategroupprops lg_set_templategroupvalue lg_set_templateprops lg_set_templateratio lg_set_templatevalue lg_sort_level lg_start lg_tp_addtemplates lg_tp_addtemplatesets lg_tp_clear lg_tp_log lg_tp_mapfilter lg_tp_objfilter lg_tp_setfilter lightning link_obj lnand load_all_textures load_done load_file load_info load_scape_texture loading_objdetail locale log log_mask logdebug logmod lor lrem lrep map map_setlayer2 Material member meminfo method method_const method_static minimalrun net new newsticker notifyflare obj_clear obj_eval obj_exit obj_find obj_find_list obj_find_nearest obj_find_nearest_storable obj_find_nearest_storable_cb obj_find_nearest_type obj_find_own obj_find_own_list obj_find_var obj_init obj_list obj_next_visible obj_query obj_to_particle obj_valid option output_3ddbstats park_obj_actions particle_processing partner_info path peek perfoptions perfwin placelock_log playerinfo poke print prod_assignworker prod_get_task_active_places prod_get_task_all_places prod_get_task_total_cnt prod_gnome_get_last_workplace prod_gnome_get_preferred_workplace prod_gnome_last_workplace prod_gnome_preferred_workplace prod_gnome_state prod_gnomeidle prod_guest prod_valid proddump prodslot_override qnew quit random reconnect ref2path ref_checkvar ref_get ref_set release_energy rem_fsource rem_fstopper remove_black_fog remove_parked_obj render_enable render_gray reset_anim reset_map reset_owner_attribs restore_obj_actions rjreusecheck save_map save_scene screen2world screen3world screen_mode scroller scrollrange sel selection seq_audiostream set_activegameplay set_alternateanimdb set_anim set_attackinprogress set_attrib set_autolight set_boxed set_brightness set_buildupstate set_camerafollow set_class_anim set_class_animset set_climbability set_cloaked set_collision set_contrast set_diplomacy set_doorproperties set_elevatorproperties set_energyclass set_energyconsumption set_energymaxstore set_energyrange set_energystore set_event set_eventenabled set_fogofwar set_forceipol set_fov set_fow_begin set_fsource set_fstopper set_ground_begin set_hoverable set_icon set_ingame_loading set_instore set_inventoryslotuse set_invulnerable set_ladderrange set_level set_light set_light_begin set_lock set_logactions set_maxprodera set_obj_logicfogskip set_obj_logicskip set_objectcollision set_objgender set_objicon set_objiconoffset set_objinfo set_objname set_objvariation set_objworkicons set_owner set_owner_attrib set_ownerrace set_particlesource set_pf_influence set_physic set_placesnapmode set_pos set_posbottom set_posx set_posy set_posz set_processactions set_prod_buildup set_prod_directevents set_prod_enabled set_prod_exclusivemode set_prod_materialneed set_prod_ownerstrength set_prod_pack set_prod_schedule set_prod_slot_cnt set_prod_switchmode set_prod_toolneed set_prod_unpack set_prodalloclock set_prodautoschedule set_renderlast set_rendermaterial set_rot set_rotx set_roty set_rotz set_run_info set_selectable set_selectedobject set_sequence set_sequenceactive set_shield_class set_snaptowall set_speechout set_split_load set_storable set_textureanimation set_texturevariation set_undeletable set_user_groups set_vel set_view set_view_begin set_viewinfog set_viewpos set_visibility set_water set_weapon_class set_worktime shader show_fogofwar show_loading show_maped sleep sm_add_event sm_add_temp sm_add_zone sm_create_map sm_def_temp_group sm_dig_message sm_draw_stone sm_force_zone sm_get_event sm_get_level_info sm_get_resolution sm_get_temppos sm_get_zone sm_log sm_map_get sm_map_move sm_map_set sm_mark_temparea sm_music_theme sm_register sm_reset sm_scan sm_send_message sm_set_digcount sm_set_event sm_set_temp sm_set_zone smalltalk snap sound sparetime speechicon start_fade startcache state state_disable state_enable state_enter state_get state_getenablecnt state_leave state_reset state_trigger state_triggerfresh talkissue tasklist_add tasklist_addfront tasklist_clear tasklist_cnt tasklist_find tasklist_get tasklist_list tasklist_rem tclhelp template_set textstage textwin time_line_log time_schedule timer_event timer_unset toggle_wf transfer_attribs trigger uncapturemouse update_objdetail vector_abs vector_add vector_angle vector_dist vector_dist3d vector_fix vector_fixdig vector_inbox vector_mul vector_normalize vector_pack vector_random vector_rotx vector_roty vector_rotz vector_setx vector_sety vector_setz vector_sub vector_unpackx vector_unpacky vector_unpackz viewlock vtune waterdbg 
+3db
+output_3ddbstats 
+get_framevel set_particlesource ai
+ai ai_getintrudergnomes ai_getintruderprods ai_getownerid ai_getpossibleinventions ai_getprodlocations ai_gnomepop_getcount ai_gnomepop_getlist ai_gnomepop_getobj ai_gnomepop_getpos ai_gnomepopscount ai_log ai_nextgnomepop ai_nextprodpop ai_npring ai_prodpop_getcount ai_prodpop_getlist ai_prodpop_getobj ai_prodpop_getpos ai_prodpopscount ai_setbuildup ai_setpack ai_tickhandler ai_validlocation attrib
+add_attrib add_expattrib add_owner_attrib blow_particlesource change_particlesource def_attrib free_particlesource get_attrib get_attrib_display_name get_attrib_names get_bestexp get_expattrib get_owner_attrib get_owner_attrib_list set_attrib set_owner_attrib transfer_attribs class
+call_method call_method_static check_method class_collosion class_defaultanim class_defaultmaterial class_defaulttxtanim class_disablescripting class_fightdist class_flagoffset class_light class_objsnapclass class_physcategory class_physic class_snaptowall class_viewinfog def_class def_idiobjclass get_class_category get_class_era get_class_flags get_class_name get_class_type in_class_def inherit member method method_const method_static obj_exit obj_init set_class_anim set_class_animset elf
+elf event
+clone_event def_event event_generator event_get evtgen_attrib get_eventenabled handle_event set_event set_eventenabled timer_event timer_unset fight
+def_hp_ratio fight_action fight_weapon get_best_weapon get_escape_value graphics
+db_animlength db_findanim db_load db_search reset_anim set_anim info
+ClassID ClassInfo ClassList ClassName map
+cave_skin dig_apply dig_mark dig_next generate_color_variation get_hmap get_lmap_blue get_lmap_green get_lmap_light get_lmap_red get_map_height get_map_width get_material get_place get_place_long ground_fix lg_add_preset lg_addfilterclass lg_dec_templatecount lg_get_level lg_get_objcount lg_get_temp_size lg_mark_area lg_set_area lg_set_callback lg_set_leveltype lg_set_objcount lg_set_starttemplate lg_set_starttemplatepro lg_set_templategroup lg_set_templategroupprops lg_set_templategroupvalue lg_set_templateprops lg_set_templateratio lg_set_templatevalue lg_sort_level lg_start lg_tp_addtemplates lg_tp_addtemplatesets lg_tp_clear lg_tp_log lg_tp_mapfilter lg_tp_objfilter lg_tp_setfilter map map_setlayer2 placelock_log remove_black_fog reset_map sm_mark_temparea misc
+// autoloadlevel calc_text_time call callnc camctrlmapping camera_set cancel_fade create_particlesource def_texture delete_laserbeams delete_lightning exec_deferred fincr find_free_place find_free_place_self flush_all_textures gamedelayannounce gameisloading gameload gamesave gamestats gametime get_anglexz get_brightness get_camerafollowdist get_cameramoving get_contrast get_digedge get_diplomacy get_fill get_fsource get_ftype get_ingame_loading get_local_player get_mapedit get_maxprodera get_mpstartpos get_next_relocobj get_place_info get_player_color get_selectedobject get_sequencebreaked get_system_name get_vectorxz get_view get_waterheight get_weapon_pose gethours gettime global_inv_rem ground_pos gui_new_game has_cmap hceil hf2i hfloor hi2f hmax ">hmax hmin ">hmin horizon_clear horizon_rem horizon_set inc_playerdigmarkid init_techtree inputmode irandom is_dig_marked isunderwater keybind land laser laserbeam lcount lightning lnand load_all_textures load_done load_file load_info load_scape_texture loading_objdetail locale log log_mask logdebug logmod lor lrem lrep meminfo minimalrun newsticker notifyflare obj_clear obj_eval option park_obj_actions particle_processing peek perfoptions perfwin playerinfo poke print prod_valid prodslot_override quit random reconnect release_energy rem_fsource rem_fstopper remove_parked_obj render_enable render_gray reset_owner_attribs restore_obj_actions rjreusecheck save_map save_scene screen2world screen3world screen_mode scroller scrollrange selection seq_audiostream set_brightness set_contrast set_diplomacy set_fov set_fow_begin set_fsource set_fstopper set_ground_begin set_ingame_loading set_level set_light_begin set_maxprodera set_objvariation set_run_info set_selectedobject set_sequence set_speechout set_split_load set_view set_view_begin set_viewpos set_water show_fogofwar show_loading show_maped sleep sm_add_event sm_add_temp sm_add_zone sm_create_map sm_def_temp_group sm_dig_message sm_draw_stone sm_force_zone sm_get_event sm_get_level_info sm_get_resolution sm_get_temppos sm_get_zone sm_log sm_map_get sm_map_move sm_map_set sm_music_theme sm_reset sm_scan sm_set_digcount sm_set_event sm_set_temp sm_set_zone smalltalk sparetime speechicon start_fade startcache talkissue tclhelp template_set textwin time_line_log time_schedule toggle_wf uncapturemouse update_objdetail vector_abs vector_add vector_angle vector_dist vector_dist3d vector_fix vector_fixdig vector_inbox vector_mul vector_normalize vector_pack vector_random vector_rotx vector_roty vector_rotz vector_setx vector_sety vector_setz vector_sub vector_unpackx vector_unpacky vector_unpackz viewlock vtune waterdbg network
+net obj
+auto_choose_gender auto_choose_workingtime check_energy check_ghost_coll create_doorlogic create_elevatorlogic create_ladderlogic delete_transportlogic fairy_move fight_setactions fight_setactions_ballistic fight_setactions_strikeback fight_setactions_training get_ballisticresult get_energy get_energysourceload get_energystore get_max_fow get_prod_buildup get_prod_directevents get_prod_enabled get_prod_exclusivemode get_prod_materialneed get_prod_ownerstrength get_prod_pack get_prod_schedule get_prod_slot_buildable get_prod_slot_cnt get_prod_slot_inventable get_prod_slot_invented get_prod_slot_list get_prod_switchmode get_prod_task_list get_prod_toolneed get_prod_total_task_cnt get_prod_unpack get_remaining_sparetime get_rendermaterial get_walkresult gnome_announce_dig gnome_failed_work gnome_idle gnome_stopped_work info_end_prod info_progress_prod info_start_prod inv_check inv_cnt_raw inv_find_raw inv_get_raw prod_assignworker prod_gnome_get_last_workplace prod_gnome_get_preferred_workplace prod_gnome_last_workplace prod_gnome_preferred_workplace prod_gnome_state prod_gnomeidle prod_guest set_doorproperties set_elevatorproperties set_energyclass set_energyconsumption set_energymaxstore set_energyrange set_energystore set_inventoryslotuse set_ladderrange set_prod_buildup set_prod_directevents set_prod_enabled set_prod_exclusivemode set_prod_materialneed set_prod_ownerstrength set_prod_pack set_prod_schedule set_prod_slot_cnt set_prod_switchmode set_prod_toolneed set_prod_unpack set_rendermaterial set_texturevariation snap object
+action chack_weapon_exp change_light cwd del destruct dig_resetid dist_between fight_map_class2db fight_weapon_kombi get_activegameplay get_alternateanimdb get_angle_num4 get_attack_pos get_attackinprogress get_autolight get_boxed get_buildupstate get_classaniminfo get_climbability get_cloaked get_collision get_diedinfight get_escape_pos get_forceipol get_gnomeposition get_hoverable get_instore get_invulnerable get_light get_linked_to get_linkpos get_linkrot get_lock get_logactions get_obj_logicfogskip get_obj_logicskip get_objclass get_objectcollision get_objgender get_objinfo get_objname get_objownertype get_objrace get_objtype get_owner get_ownerrace get_pathlength get_pathrandflags get_physic get_placesnapmode get_pos get_posbottom get_posx get_posy get_posz get_processactions get_prodalloclock get_prodautoschedule get_ref get_rel_pos get_rot get_rotx get_roty get_rotz get_selectable get_sequenceactive get_shield_class get_snaptowall get_storable get_undeletable get_user_groups get_vel get_velcomp get_viewinfog get_visibility get_weapon_class get_weapon_id get_weapon_range get_worktime hide_obj_ghost inv_add inv_cnt inv_find inv_find_obj inv_get inv_getsize inv_list inv_rem is_contained is_selected is_wearing_pannier link_obj new obj_find obj_find_list obj_find_nearest obj_find_nearest_storable obj_find_nearest_storable_cb obj_find_nearest_type obj_find_own obj_find_own_list obj_find_var obj_list obj_next_visible obj_query obj_to_particle obj_valid partner_info path proddump qnew ref2path ref_checkvar ref_get ref_set sel set_activegameplay set_alternateanimdb set_attackinprogress set_autolight set_boxed set_buildupstate set_camerafollow set_climbability set_cloaked set_collision set_fogofwar set_forceipol set_hoverable set_icon set_instore set_invulnerable set_light set_lock set_logactions set_obj_logicfogskip set_obj_logicskip set_objectcollision set_objgender set_objicon set_objiconoffset set_objinfo set_objname set_objworkicons set_owner set_ownerrace set_pf_influence set_physic set_placesnapmode set_pos set_posbottom set_posx set_posy set_posz set_processactions set_prodalloclock set_prodautoschedule set_renderlast set_rot set_rotx set_roty set_rotz set_selectable set_sequenceactive set_shield_class set_snaptowall set_storable set_textureanimation set_undeletable set_user_groups set_vel set_viewinfog set_visibility set_weapon_class set_worktime sm_register sm_send_message tasklist_add tasklist_addfront tasklist_clear tasklist_cnt tasklist_find tasklist_get tasklist_list tasklist_rem prod
+prod_get_task_active_places prod_get_task_all_places prod_get_task_total_cnt shaders
+Material shader textstage sound
+adaptive_sound sound states
+state state_disable state_enable state_enter state_get state_getenablecnt state_leave state_reset state_trigger state_triggerfresh trigger
+trigger ui
+layout 
+Top// (misc)
+//comment with working braces
+Topaction (object)
+action ‹objref› ‹name› ‹param› (‹fini-code›) (‹break-code›)start action with specific param(string),
+on completion, execute, on break, call if given
+Topadaptive_sound (sound)
+adaptive_sound addtheme ‹themename›add theme with given file name
+adaptive_sound setfightstream ‹themename› ‹streamfile›define fight stream for theme
+adaptive_sound setintrostream ‹themename› ‹streamfile›define intro stream for theme
+adaptive_sound addstandardstream ‹themename› ‹streamfile›append standard stream to theme
+adaptive_sound start
+adaptive_sound stop
+adaptive_sound fight ‹theme›
+adaptive_sound primary ‹theme›
+adaptive_sound normal
+adaptive_sound changemode ‹mode›
+adaptive_sound changetheme ‹theme›
+adaptive_sound changethemenow ‹theme›
+adaptive_sound marker ‹theme› ‹position›
+adaptive_sound markerobj ‹theme› ‹objref›
+adaptive_sound delmarker ‹position›
+adaptive_sound delmarkerobj ‹objref›
+adaptive_sound basevol [‹volume›]get/set base volume 0..100
+adaptive_sound volfact [‹volume›]get/set volume factor 0..100
+adaptive_sound markerenable
+adaptive_sound markerdisable
+adaptive_sound markerfind ‹pos›
+Topadd_attrib (attrib)
+add_attrib ‹objref› ‹attribname› ‹changeval›add changeval to current attrib value, returns new value
+Topadd_expattrib (attrib)
+add_expattrib ‹objref› ‹attribname› ‹changeval›add changeval to current attrib value, returns new value
+keeps the sum level of all exp_* attributes at a maximum of [atr_ExpMax]
+Topadd_owner_attrib (attrib)
+add_owner_attrib ‹owner-id› ‹attrib› ‹add-val›increment owner attribute, returns new value
+Topai (ai)
+ai init ‹player› ‹scriptname›init ai for player
+ai enable ‹player›enable ai for player
+ai disable ‹player›disable ai for player
+ai exec ‹player› ‹script›execute script in player ai, returns result
+Topai_getintrudergnomes (ai)
+ai_getintrudergnomesget list of intruding gnomes
+Topai_getintruderprods (ai)
+ai_getintruderprodsget list of intruding production sites
+Topai_getownerid (ai)
+ai_getowneridreturn owner of this ai
+Topai_getpossibleinventions (ai)
+ai_getpossibleinventionsget list of all open inventions and possible places
+Topai_getprodlocations (ai)
+ai_getprodlocations ‹class› ‹nearpos› ‹range›find position for prodplace
+Topai_gnomepop_getcount (ai)
+ai_gnomepop_getcount ‹popindex›get number of gnomes in indexed population
+Topai_gnomepop_getlist (ai)
+ai_gnomepop_getlist ‹popindex›get list of gnomes in indexed population
+Topai_gnomepop_getobj (ai)
+ai_gnomepop_getobj ‹popindex› ‹objidx›get single object from indexed population
+Topai_gnomepop_getpos (ai)
+ai_gnomepop_getpos ‹popindex›get position of indexed population
+Topai_gnomepopscount (ai)
+ai_gnomepopscountget number of current gnome populations
+Topai_log (ai)
+ai_loglogger with AI log mask
+Topai_nextgnomepop (ai)
+ai_nextgnomepop ‹pos›get nearest gnome population
+Topai_nextprodpop (ai)
+ai_nextprodpop ‹pos›get nearest prodplace population
+Topai_npring (ai)
+ai_npringprint to newsticker
+Topai_prodpop_getcount (ai)
+ai_prodpop_getcount ‹popindex›get number of prodplaces in indexed population
+Topai_prodpop_getlist (ai)
+ai_prodpop_getlist ‹popindex›get list of prodplaces in indexed population
+Topai_prodpop_getobj (ai)
+ai_prodpop_getobj ‹popindex› ‹objidx›get single object from indexed population
+Topai_prodpop_getpos (ai)
+ai_prodpop_getpos ‹popindex›get position of indexed population
+Topai_prodpopscount (ai)
+ai_prodpopscountget number of current prodplace populations
+Topai_setbuildup (ai)
+ai_setbuildup ‹objref› ‹pos›issue buildup command
+Topai_setpack (ai)
+ai_setpack ‹objref›issue pack command
+Topai_tickhandler (ai)
+ai_tickhandler ‹code›define tick handler for this ai entity
+Topai_validlocation (ai)
+ai_validlocation ‹class› ‹pos›check location validity for class
+Topauto_choose_gender (obj)
+auto_choose_gender ‹objref›choose gender for this object automatically, returns new gender
+Topauto_choose_workingtime (obj)
+auto_choose_workingtime ‹objref›choose working time for this object automatically
+Topautoloadlevel (misc)
+autoloadlevel levelfilemake the game autoload a level. no name disables
+Topblow_particlesource (attrib)
+blow_particlesource ‹objref› ‹srcidx› ‹dir›sets activity mode of particlesources
+Topcalc_text_time (misc)
+calc_text_time ‹text›returns length of text in seconds
+Topcall (misc)
+call ‹script name›call external script
+Topcall_method (class)
+call_method ‹objref› ‹method-name› ‹arg›...call class specific method
+Topcall_method_static (class)
+call_method_static ‹classname› ‹method-name› ‹arg›...call class specific method without instance
+Topcallnc (misc)
+callnc ‹script name›call external script skipping Tcl cache
+Topcamctrlmapping (misc)
+camctrlmapping [‹newval›]get/set camera control mapping
+Topcamera_set (misc)
+camera_set ‹startspeed› ‹waypointlist›defines cameraset (waypointlist: {{s 0 0.4} {t 1.0 3}...})
+Topcancel_fade (misc)
+cancel_fadecancel fade
+Topcave_skin (map)
+cave_skin add ‹iSize› ‹xn› ‹yn› ‹xp› ‹yp›add caveskin
+cave_skin rem ‹x› ‹y›add caveskin
+Topchack_weapon_exp (object)
+chack_weapon_exp ‹object› ‹weaponid›returns true/false if weapon is possible
+Topchange_light (object)
+change_light ‹object› ‹vector› ‹size› ‹color› [‹glowsize›]sets the light parameters
+Topchange_particlesource (attrib)
+change_particlesource ‹objref› ‹srcidx› ‹type› ‹relpos› ‹direction› ‹max_particles› ‹num_per_frame› ‹is_vis_in_fog› (‹link_id›) (‹max_rng›) (‹objverts›) (‹submesh›)allocates/changes particle source parameters
+Topcheck_energy (obj)
+check_energy ‹objref›check if there is enough energy for production
+Topcheck_ghost_coll (obj)
+check_ghost_coll ‹param› ‹objref› ‹prodref›check collision with ghost object
+params:	-	objects: returns true if ghost collides with any unremovable object
+-	gnomes: returns list of colliding gnomes, returns false if nothing found
+-	bbox: return bbox of ghost
+Topcheck_method (class)
+check_method ‹classname› ‹method-name›check if class defined method, returns true or false
+Topclass_collosion (class)
+class_collosion ‹true/false›set collosion (for Dummy Obj creation)
+Topclass_defaultanim (class)
+class_defaultanim ‹animname› [‹animmode›]set default animations for class instances
+Topclass_defaultmaterial (class)
+class_defaultmaterial ‹material›set default material for class instances
+Topclass_defaulttxtanim (class)
+class_defaulttxtanim ‹submesh› ‹framelist› [‹frame=0› ‹animtype=2›]set default texture animation for class
+Topclass_disablescripting (class)
+class_disablescriptingdisable scripting for this class
+Topclass_fightdist (class)
+class_fightdist ‹dist›set fight distance for this class
+Topclass_flagoffset (class)
+class_flagoffset ‹x› ‹z›set prod flag offset
+Topclass_light (class)
+class_light ‹vector› ‹size› ‹color› [‹glowsize›]sets the light parameters
+Topclass_objsnapclass (class)
+class_objsnapclass ‹class› ‹range›set obj-snappingclass and range
+Topclass_physcategory (class)
+class_physcategory ‹category›set category of objphysic (-1=auto, 0=falling, 1=destruction when touched, 2=destruction on crash, 3=destruction on invalidate, 4=frontfalling)
+Topclass_physic (class)
+class_physic ‹true/false›set physic (for Dummy Obj creation)
+Topclass_snaptowall (class)
+class_snaptowall ‹true/false›set snaptowall (for Dummy Obj creation)
+Topclass_viewinfog (class)
+class_viewinfog ‹true/false›set viewinfog (for Dummy Obj creation)
+TopClassID (info)
+ClassID ‹class name›get id of a class
+TopClassInfo (info)
+ClassInfo ‹class name›get info on class
+TopClassList (info)
+ClassListget list of defined classes
+TopClassName (info)
+ClassName ‹class id›get name of a class
+Topclone_event (event)
+clone_event ‹srcobjref› ‹eventtype› params...clone current event, params: -target(obj), -subject1(obj), -subject2(obj)
+-subject3(obj), -text1(string), -text2(string), -num1(num), -num2(num), -num3(num)
+-pos1(packed vector), -pos2(packed vector), -pos3(packed vector), -delay(seconds)
+Topcreate_doorlogic (obj)
+create_doorlogic ‹objref›create door logic for a door
+Topcreate_elevatorlogic (obj)
+create_elevatorlogic ‹objref› ‹cabine› ‹brope›create elevator logic for an Elevator
+Topcreate_ladderlogic (obj)
+create_ladderlogic ‹objref›create ladder logic for a ladder
+Topcreate_particlesource (misc)
+create_particlesource ‹type› ‹pos› ‹dir› ‹num› ‹time›creates temporary particle source
+Topcwd (object)
+cwd ‹objref›get current object's path
+Topdb_animlength (graphics)
+db_animlength ‹anim name›get anim frame length
+Topdb_findanim (graphics)
+db_findanim ‹db id› ‹object name› ‹anim name›find anim in database
+Topdb_load (graphics)
+db_load ‹filename›load new database
+Topdb_search (graphics)
+db_search ‹filename›find loaded database, returns id or -1
+Topdef_attrib (attrib)
+def_attrib ‹attrib name› ‹lower bound› ‹upper bound› ‹initial› ‹GUI-name›define new named attrib
+Topdef_class (class)
+def_class ‹class name› ‹category› ‹type› ‹era› ‹flaglist› ‹def block›define new object class
+categories: none food stone metal energy service
+types: none dummy gnome monster material tool production energy box blueprint store
+flags: reproduces moves lives
+Topdef_event (event)
+def_event ‹event name›define new event type
+Topdef_hp_ratio (fight)
+def_hp_ratio ‹name› ‹owner› ‹HP Ratio› [‹HP escape›]define values
+Topdef_idiobjclass (class)
+def_idiobjclass ‹class name› ‹def block›define new idiobject class
+Topdef_texture (misc)
+def_texture ‹texturename› ‹filename0›.. ‹filename15›set the texture variations
+Topdel (object)
+del (‹objref›)delete specified object or current if no path
+Topdelete_laserbeams (misc)
+delete_laserbeamsdeletes all ballistic particle sources of type "laserbeam"
+Topdelete_lightning (misc)
+delete_lightningdeletes all ballistic particle sources of type "laserbeam"
+Topdelete_transportlogic (obj)
+delete_transportlogic ‹objref›deletes transport logic
+Topdestruct (object)
+destruct ‹object›delete and destruct object
+Topdig_apply (map)
+dig_apply ‹vector› ‹object›dig a hole
+Topdig_mark (map)
+dig_mark ‹player› ‹x› ‹y› ‹cave=0/tunnel=1/undo=2› [‹depth›]mark for dig
+Topdig_next (map)
+dig_next ‹vector› ‹object› [‹bestidx›] [‹OnlyLastDigID›]get next best dig position
+Topdig_resetid (object)
+dig_resetid ‹object›reset dig id of an object
+Topdist_between (object)
+dist_between ‹objref› ‹objref›get the distance between 2 objects
+Topelf (elf)
+elf action ‹action›do action. can be any one of the animations
+elf sleepchange to sleep mode
+elf idlechange to idle mode
+elf standardchange to standard mode
+elf move ‹pos›move to position
+elf path ‹srcpos› ‹dstpos› ‹speed›moves from srcpos to dstpos with speed
+elf crash ‹pos›crash to position
+elf movescreenmove to screen center
+elf stopstop
+elf hidehide elf
+elf lockviewlock view to elf position
+elf unlockviewunlock view
+elf followview ‹offset›follow view with offset
+elf unfollowviewstop following view
+elf get_posget current position
+elf set_pos ‹pos›set current position
+elf say ‹text›print out text
+elf finishcode ‹objref› ‹code›set move finish code
+elf lookat [‹objref›]set/unset lookat-object
+elf drawoverui ‹state›change rendering order
+elf texvar [‹varidx›]change texture variation
+Topevent_generator (event)
+event_generator {objparam-name subparam-name posparam-name textparam-name} ‹code›define event generator callback
+Topevent_get (event)
+event_get ‹objref› ‹item›get data item from current event. items are:
+-timestamp(seconds), -origin (obj), -subject1(obj), -subject2(obj), -subject3(obj),
+-text1(string), -text2(string), -num1(num), -num2(num), -num3(num),
+-pos1(vector), -pos2(vector), -pos3(vector)
+Topevtgen_attrib (event)
+evtgen_attrib params...set new event generation, params: -evtid(event id) -object(sourceobj),
+-target(obj), -subject1(obj), -subject2(obj),-subject3(obj), -text1(string), -text2(string),
+-num1(num), -num2(num), -num3(num), -pos1(packed vector), -pos2(packed vector), -pos3(packed vector),
+-delay(seconds), -desc(description), -cursor(cursorspec)
+Topexec_deferred (misc)
+exec_deferred ‹script›schedule execution of script for next shell tick
+Topfairy_move (obj)
+fairy_move ‹objref› ‹targetpos› ‹targrad› ‹targetxrot› ‹targetzrot› ‹dir›
+Topfight_action (fight)
+fight_action ‹name› ‹usr› ‹pose› ‹typ› ‹vdir› ‹hdir› ‹ddir› ‹anm› ‹atk› [‹minexp›]define fight action
+name - name of action
+usr - user class id or -1 for gnome
+typ - action type: beat,stab,throw,ward,dodge,hit,idle
+vdir - direction: u,s,d
+hdir - direction: f,r,l,b
+ddir - direction: f,r,l,b
+anm - anim id or name: [db_findanim...] or 'kungfu_faust_oben'
+atk - attack/defense value: 0..1 or more with bonus
+pos - pose: normal,kungfu,sword,twohand,shield
+minexp - minimal exp
+Topfight_map_class2db (object)
+fight_map_class2db ‹class› ‹dbname›maps classname to databasename
+Topfight_setactions (obj)
+fight_setactions ‹attacker› ‹defender› ‹finish-codeAtk› ‹finish-codeDef› (‹panic›)set actions for current fight
+Topfight_setactions_ballistic (obj)
+fight_setactions_ballistic ‹attacker› ‹defender› ‹finish-code›set actions for current fight
+Topfight_setactions_strikeback (obj)
+fight_setactions_strikeback ‹attacker› (‹radius›) (‹forcehit›) (‹scanpos›)set actions for current fight
+Topfight_setactions_training (obj)
+fight_setactions_training ‹attacker› ‹attack› ‹finish-code›set actions for training
+Topfight_weapon (fight)
+fight_weapon ‹classname› ‹atk› ‹def› ‹rng› ‹pos› ‹exp_attrib› ‹attrib-val› ‹minexp› (‹anim-identifier›) (‹framelist›)define weapons
+classname - name of weapon
+atk - attack value: 0..1 or more with bonus
+def - defense value: 0..1 or more with bonus
+pos - pose: normal,kungfu,sword,twohand
+Topfight_weapon_kombi (object)
+fight_weapon_kombi ‹classlist› ‹raisevallist›defines special Weapon Kombinations
+Topfincr (misc)
+fincr ‹var-name›‹ num›do [incr] with floats
+Topfind_free_place (misc)
+find_free_place ‹pos-vector› ‹-x› ‹-z› ‹+x› ‹+z› ‹dxmin› ‹dzmin› (‹objradius›)find unoccupied place near pos-vector, returns {0,0,0} if not found
+tested rect is given by. returned position is a minimum distance of
+  from original position vector, objradius default=2
+Topfind_free_place_self (misc)
+find_free_place_self ‹objref› ‹pos-vector› ‹-x› ‹-z› ‹+x› ‹+z› ‹dxmin› ‹dzmin› (‹objradius›)find unoccupied place near pos-vector, returns {0,0,0} if not found
+tested rect is given by. returned position is a minimum distance of
+  from original position vector, objradius default=1
+Topflush_all_textures (misc)
+flush_all_textures
+Topfree_particlesource (attrib)
+free_particlesource ‹objref› ‹srcidx›frees a particlesource
+Topgamedelayannounce (misc)
+gamedelayannounce [‹amount›]announcs delay in gameplay. amount=0..100 default=100
+Topgameisloading (misc)
+gameisloadingcheck if there is currently a game loading
+Topgameload (misc)
+gameload ‹filename›load game from file
+Topgamesave (misc)
+gamesave ‹filename›save current game to file
+Topgamestats (misc)
+gamestats numgnomes ‹owner›get number of gnomes for player
+gamestats numbabies ‹owner›get number of babies for player
+gamestats nummale ‹owner›get number of male gnomes and babies for player
+gamestats numfemale ‹owner›get number of female gnomes and babies for player
+gamestats numpregnant ‹owner›get number of pregnant gnomes for player
+gamestats avgchildren ‹owner›get average number of children per gnome for player
+gamestats numprods ‹owner›get number of production sites for player
+gamestats numbuiltprodclasses ‹owner›get number of built production classes for player
+gamestats numitems ‹owner› ‹class›get number of class instances for player
+gamestats attribmax ‹owner› ‹attribname›get maximum attribute for player. objects with attrib = 0 are ignored
+attribname 'expsum' denotes the sum of all experiences of the object
+gamestats attribmin ‹owner› ‹attribname›get minimum attribute for player. objects with attrib = 0 are ignored
+attribname 'expsum' denotes the sum of all experiences of the object
+gamestats attribsum ‹owner› ‹attribname›get sub of attribute over all objects for player. objects with attrib = 0 are ignored
+attribname 'expsum' denotes the sum of all experiences of the object
+gamestats attribset ‹owner› ‹attribname›get number of objects with this attribute != 0
+attribname 'expsum' denotes the sum of all experiences of the object
+gamestats attribavg ‹owner› ‹attribname›get average attribute for player. objects with attrib = 0 are ignored
+attribname 'expsum' denotes the sum of all experiences of the object
+Topgametime (misc)
+gametime ‹command› [‹value›]handle game time
+gametime start -start clock
+gametime stop - halt clock
+gametime reset - reset clock to 0 seconds
+gametime factor [] - set clock factor, returns current/new factor
+Topgenerate_color_variation (map)
+generate_color_variation ‹left› ‹top› ‹right› ‹bottom› ‹type›generate variations for 1st texture-layer of the scape
+Topget_activegameplay (object)
+get_activegameplay ‹objref›get activegameplay flag (object event and state handling)
+Topget_alternateanimdb (object)
+get_alternateanimdb ‹objref›get object alternate anim state
+Topget_angle_num4 (object)
+get_angle_num4 ‹pos1› ‹pos2›returns 0 for pos2 is over pos1, 1 for right...
+Topget_anglexz (misc)
+get_anglexz ‹vector› ‹vector›get xz-angle
+Topget_attack_pos (object)
+get_attack_pos ‹objref-Atk› ‹objref-Def› (‹dist›)get position for fight
+Topget_attackinprogress (object)
+get_attackinprogress ‹objref›get attackinprogress
+Topget_attrib (attrib)
+get_attrib ‹objref› ‹attribname›get current attribute value
+Topget_attrib_display_name (attrib)
+get_attrib_display_name ‹attrib›get attribute display name
+Topget_attrib_names (attrib)
+get_attrib_namesget list of defined attribute names
+Topget_autolight (object)
+get_autolight ‹objref›get object autolight
+Topget_ballisticresult (obj)
+get_ballisticresult ‹objref›gets the result of the last ballistic-action on the object (0=FALED,1=HIT)
+Topget_best_weapon (fight)
+get_best_weapon ‹obj› (‹ballistic›)returns list of best weapon and shield in inventory
+Topget_bestexp (attrib)
+get_bestexp ‹objref›returns best attrib
+Topget_boxed (object)
+get_boxed ‹objref›get object boxed state
+Topget_brightness (misc)
+get_brightnessget brightness value (0..2)
+Topget_buildupstate (object)
+get_buildupstate ‹objref›get object boxed state
+Topget_camerafollowdist (misc)
+get_camerafollowdistreturns distance between camera-follow-object and viewport-center
+Topget_cameramoving (misc)
+get_cameramovingreturns if camera is moving
+Topget_class_category (class)
+get_class_category ‹classname›get class category
+Topget_class_era (class)
+get_class_era ‹classname›get class era
+Topget_class_flags (class)
+get_class_flags ‹classname›get class flags
+Topget_class_name (class)
+get_class_nameget name of class in current definition context
+Topget_class_type (class)
+get_class_type ‹classname›get class type
+Topget_classaniminfo (object)
+get_classaniminfo (‹classname›) ‹anim›get anim info
+Topget_climbability (object)
+get_climbability ‹objref›get the ability to climb
+Topget_cloaked (object)
+get_cloaked ‹objref›find out if object (gnome) is cloaked
+Topget_collision (object)
+get_collision ‹objref›get collision flag
+Topget_contrast (misc)
+get_contrastget contrast value (0..2)
+Topget_diedinfight (object)
+get_diedinfight ‹objref›get diedinfight
+Topget_digedge (misc)
+get_digedge ‹topos› ‹obj›gets a point at the edge of a zone marked for dig
+Topget_diplomacy (misc)
+get_diplomacy ‹owner› ‹owner›sets owner diplomacy state
+Topget_energy (obj)
+get_energy ‹objref›get energy for production
+Topget_energysourceload (obj)
+get_energysourceload ‹objref›get the activity of the energysource (%)
+Topget_energystore (obj)
+get_energystore ‹objref›get the energy store of an energysource
+Topget_escape_pos (object)
+get_escape_pos ‹objref› ‹scandist› ‹walkdist›get position for escaping, returns: -1 if nothing found, 0 if no gnome is near
+Topget_escape_value (fight)
+get_escape_value ‹name› ‹owner›returns escape value
+Topget_eventenabled (event)
+get_eventenabled ‹event name› ‹player-id›check if event is enabled
+Topget_expattrib (attrib)
+get_expattrib [‹fight›]returns exp_attrib list
+fight - default: returns all exp_, 0: returns not fight attribs, 1: returns exp_F_
+Topget_fill (misc)
+get_fill ‹x› ‹y›returns fill of water
+Topget_forceipol (object)
+get_forceipol ‹objref›get forceipol flag
+Topget_framevel 
+get_framevel ‹objref›gets the velocity of the object during the last frame
+Topget_fsource (misc)
+get_fsource ‹object› ‹param›get fsource-property
+Topget_ftype (misc)
+get_ftype ‹pos›return ftype- 0=none, 1=water, 2=sulfur, 3=lava, 4=lavawater
+Topget_gnomeposition (object)
+get_gnomeposition ‹objref›stets a walking object to still anim, returns 0 if standing, 1 if hanging
+Topget_hmap (map)
+get_hmap ‹x› ‹y›returns the height at a point in the map
+Topget_hoverable (object)
+get_hoverable ‹objref›get object hoverability
+Topget_ingame_loading (misc)
+get_ingame_loadingreturns true if all objects from buffer are loaded
+Topget_instore (object)
+get_instore ‹objref›find out if object is in a store
+Topget_invulnerable (object)
+get_invulnerable ‹objref›find out if object (creature) is invulnerable
+Topget_light (object)
+get_light ‹object›returns the state of light
+Topget_linked_to (object)
+get_linked_to ‹objref›gets the object that this object is linked to (-1 if none)
+Topget_linkpos (object)
+get_linkpos ‹objref› ‹link-id›get position of link in current frame
+Topget_linkrot (object)
+get_linkrot ‹objref› ‹link-id›get rotation of link in current frame
+Topget_lmap_blue (map)
+get_lmap_blue ‹x› ‹y›returns the blue color at a point in the map
+Topget_lmap_green (map)
+get_lmap_green ‹x› ‹y›returns the green color at a point in the map
+Topget_lmap_light (map)
+get_lmap_light ‹x› ‹y›returns the brightness at a point in the map
+Topget_lmap_red (map)
+get_lmap_red ‹x› ‹y›returns the red color at a point in the map
+Topget_local_player (misc)
+get_local_playerget local player id
+Topget_lock (object)
+get_lock ‹objref›get object lock
+Topget_logactions (object)
+get_logactions ‹objref›get object action logging
+Topget_map_height (map)
+get_map_heightreturns the height of the map
+Topget_map_width (map)
+get_map_widthreturns the width of the map
+Topget_mapedit (misc)
+get_mapedit1 if mapeditor-mode, 0 if ingame
+Topget_material (map)
+get_material ‹vector›get type of material: 0-stone 1/2-sand/earth 3-scapehole
+Topget_max_fow (obj)
+get_max_fow ‹objref› [‹owner›]returns max fow for that owner (for all owners if none specified)
+Topget_maxprodera (misc)
+get_maxprodera ‹player›get maximum displayed production era
+Topget_mpstartpos (misc)
+get_mpstartpos ‹mapsizex› ‹mapsizey› ‹teamlist›calculates the best startpositions for multiplayers
+Topget_next_relocobj (misc)
+get_next_relocobjreturns next object from relocation buffer, returns -1 for empty buffer (object is removed from this buffer)
+Topget_obj_logicfogskip (object)
+get_obj_logicfogskip ‹objref›get object logic fog skip count
+Topget_obj_logicskip (object)
+get_obj_logicskip ‹objref›get object logic skip count
+Topget_objclass (object)
+get_objclass ‹objref›get object class name of referenced or current object
+Topget_objectcollision (object)
+get_objectcollision ‹objref›get objectcollision flag
+Topget_objgender (object)
+get_objgender ‹objref›get object gender. male, female, neutral
+Topget_objinfo (object)
+get_objinfo ‹objref›get object info text
+Topget_objname (object)
+get_objname ‹objref›get object name of referenced or current object
+Topget_objownertype (object)
+get_objownertype ‹object›returns the owner type of an object (0=none 1=human 2=ai)
+Topget_objrace (object)
+get_objrace ‹object›returns race of an object
+Topget_objtype (object)
+get_objtype ‹objref›get object type (none,dummy,gnome,monster,material,tool,production,energy,box,blueprint,store)
+Topget_owner (object)
+get_owner ‹object›returns the owner of an object
+Topget_owner_attrib (attrib)
+get_owner_attrib ‹owner-id› ‹attrib›get attribute for specified owner
+Topget_owner_attrib_list (attrib)
+get_owner_attrib_list ‹owner-id›get list of attribute values for specified owner
+Topget_ownerrace (object)
+get_ownerrace ‹owner›returns race of an owner
+Topget_pathlength (object)
+get_pathlength ‹objref›returns the Length of the Current Path (in Blocks)
+Topget_pathrandflags (object)
+get_pathrandflags ‹objref› ‹objref›gives a flag combination, that lets path_rand generate a path away from object 2
+Topget_physic (object)
+get_physic ‹objref›get object physic
+Topget_place (map)
+get_place ‹params›find a free place
+Topget_place_info (misc)
+get_place_inforeturns placing info {placing placeok placebox}
+Topget_place_long (map)
+get_place_long ‹center› ‹range› [‹fixwalkable=f›] [‹walkable=f›]find a passable point (no collision-map-check !)
+Topget_placesnapmode (object)
+get_placesnapmode ‹objref›get object snap to wall while placing
+Topget_player_color (misc)
+get_player_colorreturns color assigned to this player
+Topget_pos (object)
+get_pos ‹objref›get current object's position as packed vector
+Topget_posbottom (object)
+get_posbottom ‹objref›get current object's bottom's position as packed vector
+Topget_posx (object)
+get_posx ‹objref›get current object's x position
+Topget_posy (object)
+get_posy ‹objref›get current object's y position
+Topget_posz (object)
+get_posz ‹objref›get current object's z position
+Topget_processactions (object)
+get_processactions ‹objref›get collision flag
+Topget_prod_buildup (obj)
+get_prod_buildup ‹object›get object unpack task state
+Topget_prod_directevents (obj)
+get_prod_directevents ‹objref›set switch production mode
+Topget_prod_enabled (obj)
+get_prod_enabled ‹objref›get true if energy source is on
+Topget_prod_exclusivemode (obj)
+get_prod_exclusivemode ‹objref›set exclusive production mode
+Topget_prod_materialneed (obj)
+get_prod_materialneed ‹objref›set the need of materials
+Topget_prod_ownerstrength (obj)
+get_prod_ownerstrength ‹object›get object owner strength
+Topget_prod_pack (obj)
+get_prod_pack ‹object›get object pack task state
+Topget_prod_schedule (obj)
+get_prod_schedule ‹objref›set switch production mode
+Topget_prod_slot_buildable (obj)
+get_prod_slot_buildable ‹object› ‹class›check if slot is buildable
+Topget_prod_slot_cnt (obj)
+get_prod_slot_cnt ‹object› ‹itemclass›get task count for production slot
+Topget_prod_slot_inventable (obj)
+get_prod_slot_inventable ‹object› ‹class›check if slot is inventable
+Topget_prod_slot_invented (obj)
+get_prod_slot_invented ‹object› ‹class›check if slot is invented
+Topget_prod_slot_list (obj)
+get_prod_slot_list ‹object›get list of all slots
+Topget_prod_switchmode (obj)
+get_prod_switchmode ‹objref›set switch production mode
+Topget_prod_task_list (obj)
+get_prod_task_list ‹object›get list of open tasks
+Topget_prod_toolneed (obj)
+get_prod_toolneed ‹objref›set the need of tools
+Topget_prod_total_task_cnt (obj)
+get_prod_total_task_cnt ‹object›get total number of open tasks
+Topget_prod_unpack (obj)
+get_prod_unpack ‹object›get object unpack task state
+Topget_prodalloclock (object)
+get_prodalloclock ‹objref›get production alloc state
+Topget_prodautoschedule (object)
+get_prodautoschedule ‹objref›get production auto schedule
+Topget_ref (object)
+get_ref ‹objref›get reference to current object or specified object
+Topget_rel_pos (object)
+get_rel_pos ‹objref› ‹objref›get current object's position as packed vector
+Topget_remaining_sparetime (obj)
+get_remaining_sparetime ‹objref›get hours of sparetime left
+Topget_rendermaterial (obj)
+get_rendermaterial ‹objref›get object rendering material
+Topget_rot (object)
+get_rot ‹objref›get current object's rotation as packed vector
+Topget_rotx (object)
+get_rotx ‹objref›get current object's x rotation
+Topget_roty (object)
+get_roty ‹objref›get current object's y rotation
+Topget_rotz (object)
+get_rotz ‹objref›get current object's z rotation
+Topget_selectable (object)
+get_selectable ‹objref›get object selectability
+Topget_selectedobject (misc)
+get_selectedobjectget selection
+Topget_sequenceactive (object)
+get_sequenceactive ‹objref› ‹newstate›set object selectability
+Topget_sequencebreaked (misc)
+get_sequencebreakedreturns distance between camera-follow-object and viewport-center
+Topget_shield_class (object)
+get_shield_class ‹object›gets the Shield ID
+Topget_snaptowall (object)
+get_snaptowall ‹objref›get object snap to wall
+Topget_storable (object)
+get_storable ‹objref›get object lock
+Topget_system_name (misc)
+get_system_name (computer|user)get name of computer or local user
+Topget_undeletable (object)
+get_undeletable ‹objref›find out if object is undeletable
+Topget_user_groups (object)
+get_user_groups ‹objref›get list of user group assignments
+Topget_vectorxz (misc)
+get_vectorxz ‹angle› ‹length›get xz-vector
+Topget_vel (object)
+get_vel ‹objref›get current object's velocity as packed vector
+Topget_velcomp (object)
+get_velcomp ‹objref›get current object's velocity as packed vector
+Topget_view (misc)
+get_view (‹newview›)set view pos, zoom and optionally rotation, if is true get_view returns target camera position
+Topget_viewinfog (object)
+get_viewinfog ‹objref›get object visibility in fog of war
+Topget_visibility (object)
+get_visibility ‹objref›get visibility
+Topget_walkresult (obj)
+get_walkresult ‹objref›gets the result of the last walk-action on the object (0=WS_ERROR, 1=WS_WALKABORTED, 2=WS_NOTFINISHED, 3=WS_NOPASSAGE, 4=WS_TARGETREACHED)
+Topget_waterheight (misc)
+get_waterheight ‹pos›get height of water
+Topget_weapon_class (object)
+get_weapon_class ‹object›gets the Weapon ID
+Topget_weapon_id (object)
+get_weapon_id ‹object› ‹atdef›returns weaponid if obj is a registered weapon
+atdef -- true finds attack-weapons, false finds defense-weapons
+Topget_weapon_pose (misc)
+get_weapon_pose ‹id›returns pose of weapon
+Topget_weapon_range (object)
+get_weapon_range ‹weaponid›returns range of weapon
+Topget_worktime (object)
+get_worktime ‹object›get worktime start and duration as list
+get_worktime ‹object› startget worktime start
+get_worktime ‹object› nextstartget next worktime start timestamp
+get_worktime ‹object› laststartget last worktime start timestamp
+get_worktime ‹object› durationget worktime duration
+get_worktime ‹object› endget worktime end
+get_worktime ‹object› nextendget next worktime end timestamp
+get_worktime ‹object› lastendget last worktime end timestamp
+Topgethours (misc)
+gethoursget current timestamp in total logic hours
+Topgettime (misc)
+gettimeget current timestamp in seconds
+Topglobal_inv_rem (misc)
+global_inv_rem ‹objlist›remove objects from any inventory
+Topgnome_announce_dig (obj)
+gnome_announce_dig ‹objref› ‹pos›announce dig action
+Topgnome_failed_work (obj)
+gnome_failed_work ‹objref›notify gnome work break
+Topgnome_idle (obj)
+gnome_idle ‹objref› [true|false]notify gnome is idle
+Topgnome_stopped_work (obj)
+gnome_stopped_work ‹objref›notify gnome work break
+Topground_fix (map)
+ground_fixfix a vector to ground
+Topground_pos (misc)
+ground_pos ‹vector›get valid ground vector from given vector
+Topgui_new_game (misc)
+gui_new_game (‹permanently›)show "New Game" window
+Tophandle_event (event)
+handle_event ‹event name› ‹code›set event handler for class
+Tophas_cmap (misc)
+has_cmap ‹animname› [‹frame›]
+Tophceil (misc)
+hceil ‹num›calc ceil value
+Tophf2i (misc)
+hf2i ‹num›convert float to int
+Tophfloor (misc)
+hfloor ‹num›calc floor value
+Tophi2f (misc)
+hi2f ‹num›convert int to float
+Tophide_obj_ghost (object)
+hide_obj_ghost ‹objref›hide object ghost if present
+Tophmax (misc)
+hmax ‹num› [‹num›...]returns highest value
+Top">hmax (misc)
+hmax	‹numlist›returns highest value
+Tophmin (misc)
+hmin ‹num› [‹num›...]returns highest value
+Top">hmin (misc)
+hmin	‹numlist›returns highest value
+Tophorizon_clear (misc)
+horizon_clearremove all horizons
+Tophorizon_rem (misc)
+horizon_rem ‹pos›remove horizon
+Tophorizon_set (misc)
+horizon_set ‹pos› ‹red› ‹green› ‹blue› ‹depth› ‹size›set horizon
+Topin_class_def (class)
+in_class_defcheck if this is in class definition or executuion
+Topinc_playerdigmarkid (misc)
+inc_playerdigmarkid ‹player›increment current player-dig-mark-ID
+Topinfo_end_prod (obj)
+info_end_prod ‹objref›notify production end
+Topinfo_progress_prod (obj)
+info_progress_prod ‹objref› ‹currentstep› ‹maxstep›notify production start
+Topinfo_start_prod (obj)
+info_start_prod ‹objref›notify production start
+Topinherit (class)
+inherit ‹classname›...inherit all methods, event handlers, member vars
+Topinit_techtree (misc)
+init_techtree ‹filename›initialize techtree
+Topinputmode (misc)
+inputmode [‹pc|console›]get/set current input mode
+Topinv_add (object)
+inv_add ‹objref› ‹objreftoadd›add object to inventory, make it invisible, returns index
+Topinv_check (obj)
+inv_check ‹objref› ‹object›check, if object can packed to inventory
+Topinv_cnt (object)
+inv_cnt ‹objref›get length of inventory list
+Topinv_cnt_raw (obj)
+inv_cnt_raw ‹objref›get number of packed objects
+Topinv_find (object)
+inv_find ‹objref› ‹classname›find index of inventory item of given class, -1 if not found
+Topinv_find_obj (object)
+inv_find_obj ‹objref› ‹searchobjref›find index of inventory item, -1 if not found
+Topinv_find_raw (obj)
+inv_find_raw ‹objref› ‹object›get index of packed óbject
+Topinv_get (object)
+inv_get ‹objref› ‹index›get reference to indexed inventory object
+Topinv_get_raw (obj)
+inv_get_raw ‹objref› ‹object›get packed object
+Topinv_getsize (object)
+inv_getsize ‹objref›get size of inventory
+Topinv_list (object)
+inv_list ‹objref›get (ref)list of inventory objects
+Topinv_rem (object)
+inv_rem ‹objref› ‹index-or-ref› (‹position›)remove object from inventory,
+makes it visible and sets it position (default=container's pos)
+Topirandom (misc)
+irandom ‹upper bound›get random number 0..upper bound
+irandom ‹lower bound› ‹upper bound›get random number lower bound..upper bound
+Topis_contained (object)
+is_contained ‹obj-ref›checks if object is part of some other objects inventory
+Topis_dig_marked (misc)
+is_dig_marked ‹xn› ‹yn› ‹xp› ‹yp›checks area for digmark
+Topis_selected (object)
+is_selected ‹objref›check if objref = selected
+Topis_wearing_pannier (object)
+is_wearing_pannier ‹objref›check if obj is wearing a pannier
+Topisunderwater (misc)
+isunderwater ‹pos›find out, if vertex is under water
+Topkeybind (misc)
+keybind set ‹keyname› ?shift? ?alt? ?ctrl? ?down? ‹command›set a new key binding
+keybind get ‹keyname› ?shift? ?alt? ?ctrl? ?down?get a key binding
+keybind clr ‹keyname› ?shift? ?alt? ?ctrl? ?down?remove key binding
+keybind keynamesget list of key names
+keybind currentget list current bindings
+Topland (misc)
+land ‹list1› ‹list2›list1 & list2
+Toplaser (misc)
+laser ‹vStart› ‹vDest› ‹vDir› ‹fDuration›
+laser ‹obj› ‹link› ‹vDest› ‹fDuration›
+Toplaserbeam (misc)
+laserbeam ‹vStart› ‹vDest› ‹vDir› ‹fDuration› ‹color red› ‹green› ‹blue›
+laserbeam ‹obj› ‹link› ‹vDest› ‹fDuration› ‹color red› ‹green› ‹blue›
+Toplayout (ui)
+layout presentcheck for presence of layout window
+layout log ‹args›gui log
+layout clearclear layout window
+layout print ‹args›print to layout window
+layout addlink ‹target›add link to layout window, return id
+layout autolink ‹target› ‹text› [‹rmbtarget›]add link, return linked text
+layout addxlink ‹target›add execute link to layout window, return id
+layout autoxlink ‹target› ‹text› [‹rmbtarget›]add execute link, return linked text
+layout reloadre-eval last run script
+Toplcount (misc)
+lcount ‹list› ‹element›returns the number of in list
+Toplg_add_preset (map)
+lg_add_preset ‹template› ‹x› ‹y›add preset template for levelgeneration
+Toplg_addfilterclass (map)
+lg_addfilterclass {‹classname› ‹classname›...}adds a class as filter for a template for levelgenerating
+Toplg_dec_templatecount (map)
+lg_dec_templatecount ‹tclmapfile›returns the last generated level
+Toplg_get_level (map)
+lg_get_levelreturns the last generated level
+Toplg_get_objcount (map)
+lg_get_objcount ‹classname›get numer of objects in the last generated level
+Toplg_get_temp_size (map)
+lg_get_temp_size ‹tempname›returns size of template {w h}
+Toplg_mark_area (map)
+lg_mark_area ‹left› ‹top› ‹right› ‹bottom›mark an area as filled with templates
+Toplg_set_area (map)
+lg_set_area ‹left› ‹top› ‹right› ‹bottom›set area for levelgeneration
+Toplg_set_callback (map)
+lg_set_callback ‹object› ‹procname›set callback for levelgeneration
+Toplg_set_leveltype (map)
+lg_set_leveltype base|resourceset leveltype for levelgeneration
+Toplg_set_objcount (map)
+lg_set_objcount ‹classname› ‹minimum› ‹optimum› ‹maximum›set object count for levelgeneration
+Toplg_set_starttemplate (map)
+lg_set_starttemplate ‹tclmapfile›set first template for levelgeneration
+Toplg_set_starttemplatepro (map)
+lg_set_starttemplatepro [‹digmarkalign›] [‹setunique›]set first templates for levelgeneration
+Toplg_set_templategroup (map)
+lg_set_templategroup ‹setname› {‹tclmapfile› ‹tclmapfile›...}defines a templategroup
+Toplg_set_templategroupprops (map)
+lg_set_templategroupprops ‹tempgroup› [-gamecount ‹num›] [-levelcount ‹num›] [-tunnel ‹float›]sets template group properties
+Toplg_set_templategroupvalue (map)
+lg_set_templategroupvalue ‹setname› ‹val›set weighing value for templategroup
+Toplg_set_templateprops (map)
+lg_set_templateprops ‹tclmapfile› [-gamecount ‹num›] [-levelcount ‹num›] [-tunnel ‹float›]sets template properties
+Toplg_set_templateratio (map)
+lg_set_templateratio ‹minimum› ‹optimum› ‹maximum›set ratio of templates for levelgeneration
+Toplg_set_templatevalue (map)
+lg_set_templatevalue ‹tempname› ‹val›set weighing value for template
+Toplg_sort_level (map)
+lg_sort_level ‹x› ‹y› ‹level›sorts the level
+Toplg_start (map)
+lg_startstarts levelgeneration
+Toplg_tp_addtemplates (map)
+lg_tp_addtemplates {‹tclmapfile› ‹tclmapfile›...}adds templates to templatepool
+Toplg_tp_addtemplatesets (map)
+lg_tp_addtemplatesets {‹setname› ‹setname›...}adds templates to templatepool
+Toplg_tp_clear (map)
+lg_tp_clearflushes the template pool for levelgeneration
+Toplg_tp_log (map)
+lg_tp_loglog template pool to logger
+Toplg_tp_mapfilter (map)
+lg_tp_mapfilter {‹tclmapfile› ‹tclmapfile›...}filter map files from templatepool
+Toplg_tp_objfilter (map)
+lg_tp_objfilter {‹classname› ‹classname›...}filter templates from templatepool with these classes
+Toplg_tp_setfilter (map)
+lg_tp_setfilter {‹setname› ‹setname›...}filter sets from templatepool
+Toplightning (misc)
+lightning ‹vStart› ‹vDest› ‹vDir› ‹fDuration› ‹color red› ‹green› ‹blue›
+lightning ‹obj› ‹link› ‹vDest› ‹fDuration› ‹color red› ‹green› ‹blue›
+Toplink_obj (object)
+link_obj ‹objref› (‹link-target› (‹link-id›))link current object to another objects link-dummy
+Toplnand (misc)
+lnand ‹list1› ‹list2›!list1 & list2
+Topload_all_textures (misc)
+load_all_texturescircumvent lazy texture loading
+Topload_done (misc)
+load_doneloading done
+Topload_file (misc)
+load_file ‹filename› (‹cached›)returns content of file as string
+Topload_info (misc)
+load_info info-textset current load info
+Topload_scape_texture (misc)
+load_scape_texture ‹set› ‹level› {{tile0000variation0... tile0000variationN}... {tile1111variation0... tile1111variationN}}load scape textures... kann mir die Erklärung eigentlich auch sparen, die Grafiker verstehns eh nicht...
+Toploading_objdetail (misc)
+loading_objdetailreturns object detail level
+Toplocale (misc)
+locale [‹locale›]set/get locale
+Toplog (misc)
+log args...print to logger
+Toplog_mask (misc)
+log_mask [+-?]option...change log mask, usage: log_mask +system -actions +objects
+valid options are: system tclmsg tclerror dxerror dx3d dxdraw dxsound dxplay
+dxinput 3ddb network objects ai actions map graphics gui init shut dbgc dbgd dbgj
+Toplogdebug (misc)
+logdebug ‹text›log tcl debug info
+Toplogmod (misc)
+logmod (‹module›)set log module, if no module given, log all
+Toplor (misc)
+lor ‹list1› ‹list2› [...]list1 | list2 |...
+Toplrem (misc)
+lrem ‹listvarname› ‹elementindex›removes one list element
+Toplrep (misc)
+lrep ‹listvarname› ‹elementindex› ‹newelement›replaces one list element
+Topmap (map)
+map create ‹width› ‹height› (‹xoffset›) (‹yoffset›) (‹completion-code›)create new map
+map move ‹xmove› ‹ymove›move the map
+map savesave map to d:\mappack.bin
+map sendsend map to clients
+map shutshutdown map
+map getoffsetreturns offset of map
+Topmap_setlayer2 (map)
+map_setlayer2 ‹x› ‹y› ‹file›set 2nd texturelayer
+TopMaterial (shaders)
+Material define ‹Materialname› ‹def-list›define Material
+Topmember (class)
+member ‹varname›...declare var(s) as class member(s)
+Topmeminfo (misc)
+meminfodump memory info
+Topmethod (class)
+method ‹proc-name› ‹arg› ‹code›define class-specific proc
+Topmethod_const (class)
+method_const ‹proc-name› ‹arg› ‹code›define class-specific proc
+Topmethod_static (class)
+method_static ‹proc-name› ‹arg› ‹code›define class-specific proc
+Topminimalrun (misc)
+minimalrunreturns if this is a minimal run
+Topnet (network)
+net versionlocal version
+Topnew (object)
+new ‹class-name› [‹creation-param› [‹pos› [‹rot›]]]create new object, returns reference
+Topnewsticker (misc)
+newsticker new ‹owner-id› [-text ‹text›] [-category ‹category›] [-color ‹color›] [-priority ‹priority›] [-time ‹time›] [-history ‹true|false›]add new message, returns id
+newsticker change ‹id› [-text ‹text›] [-color ‹color›] [-priority ‹priority›] [-time ‹time›] [-click ‹clickhandler›] [-history ‹true|false›]change old message
+id - id of message, giving -1 creates new message
+text - text of message, default is 'msg'
+category - fight, progress, gnomecritical, gnomeinfo, material, mood
+color - color of text, default is {255 255 255} (white)
+priority - priority, default is 1.0
+time - timeout, default is 60 seconds
+clickhandler - tcl script to execute when message is clicked
+history - wether this entry should appear in the history
+newsticker delete ‹id›delete message
+newsticker mask ‹(+|-|?category›...
+Topnotifyflare (misc)
+notifyflare ‹x-prc› ‹y-prc›show notification flare
+Topobj_clear (misc)
+obj_clearremove all objects
+Topobj_eval (misc)
+obj_eval ‹objref› ‹script›run skript in foreign object's context
+Topobj_exit (class)
+obj_exit ‹code›set exit code for class
+Topobj_find (object)
+obj_find ‹objref› ‹class-name› (‹max-dist›)find next object of given class,
+returns reference to object
+returns 0 if nothing found
+Topobj_find_list (object)
+obj_find_list ‹objref› ‹class-name› (‹max-dist›)get list of object references for given class
+list is sorted by distance. nearest first. max-dist default is infinite
+Topobj_find_nearest (object)
+obj_find_nearest ‹objref› ‹class-name-list› (‹max-dist›)find next object of given class,
+returns Reference to object, and Class name of object
+returns 0 if nothing found
+Topobj_find_nearest_storable (object)
+obj_find_nearest_storable ‹objref›find next storable object
+returns reference to object
+returns 0 if nothing found
+Topobj_find_nearest_storable_cb (object)
+obj_find_nearest_storable_cb ‹objref› ‹check-code›find next storable object,
+ shall return true if object matches condition or false if not
+returns reference to object
+returns 0 if nothing found
+Topobj_find_nearest_type (object)
+obj_find_nearest_type ‹objref› ‹type› (‹max-dist›)find next object of given type, {production energy protection tool store transport etc.}
+returns Reference to object, and Class name of object
+returns 0 if nothing found
+Topobj_find_own (object)
+obj_find_own ‹objref› ‹class-name› (‹max-dist›)find next object of given class,
+returns reference to object with same owner
+returns 0 if nothing found
+Topobj_find_own_list (object)
+obj_find_own_list ‹objref› ‹class-name› (‹max-dist›)find next object of given class,
+returns list of object with same owner
+returns 0 if nothing found
+Topobj_find_var (object)
+obj_find_var ‹objref› ‹class-name› ‹refvarname›find next object of given class,
+returns true if object was found, false if not
+refvarname holds object reference
+Topobj_init (class)
+obj_init ‹code›set init code for class
+Topobj_list (object)
+obj_list ‹objref›get list of objects in current node
+Topobj_next_visible (object)
+obj_next_visible ‹objref› ‹class-name› ‹maxdistance›get the nearest visible object
+Topobj_query (object)
+obj_query ‹objref› ‹params›get list of objects
+params are: -class: single class to find
+-type: gnome, monster, production, energy, protection, store, transport, elevator, baby, info, tool, marerial
+-range: maximum distance from objref
+-boundingbox: object must be in bbox, bbox is relative to position of objref
+bbox can be a list of 2 vectors (negative and positive)
+or {-x -y -z +x +y +z}
+-owner: 0..7, own(same as objref), world, player, allplayers, enemy, any, other
+-visibility: 0..7, own(same as objref), playervislible, playerinvislible, enemyvisible, enemyinvisible, any
+-flagpos: boxed, visible, locked, storable, male, female, contained, hoveable, selectable, build, instore (must be set)
+-flagneg: boxed, visible, locked, storable, male, female, contained, hoveable, selectable, build, instore (mustn't be set)
+-limit: maximal nr of results
+-pos: ObjQuery takes instead of s pos (warning: this parameter must be speciefied before -range and -boundingbox)
+-sorting: asc = best match first(default),desc = best match last,none = don't sort
+-alloc: none,any (default), 0..7 Filter objects allocated for production
+-cloaked: return cloaked (invisible) objects, default is 0
+Topobj_to_particle (object)
+obj_to_particle ‹object› ‹type›creates particle at object's vertices
+Topobj_valid (object)
+obj_valid ‹objref›check if object ref is valid
+Topoption (misc)
+option get ‹option-name›get option value
+option getname ‹option-name›get option value as name
+option set ‹option-name› ‹value›set option valuew
+option setname ‹option-name› ‹valuename›set option value as name
+option getdesc ‹option-name›get option description
+option getinfo ‹option-name›get list of possible values
+option listget list of options
+Topoutput_3ddbstats (3db)
+output_3ddbstatsoutput current 3DB statistics
+Toppark_obj_actions (misc)
+park_obj_actions ‹Classlist›parks action of all objets of speciefies classes
+Topparticle_processing (misc)
+particle_processing ‹bool›enable/disable ParticleProcessing
+Toppartner_info (object)
+partner_info setpartner ‹objref› ‹partner›sets partner showed in tooltip
+partner_info getpartner ‹objref›gets partner showed in tooltip
+partner_info setpregnancy	‹objref› ‹pregnancy›sets pregnancy showed in tooltip
+partner_info getpregnancy	‹objref›gets pregnancy showed in tooltip
+partner_info addchild ‹objref› ‹baby›sets baby showed in tooltip
+partner_info setfather ‹objref› ‹father›sets father showed in tooltip
+partner_info getfather ‹objref›gets father showed in tooltip
+partner_info setmother ‹objref› ‹mother›sets father showed in tooltip
+partner_info getmother ‹objref›gets father showed in tooltip
+partner_info transfer ‹baby› ‹gnome›transfers partner infos from baby to gnome
+partner_info getchildren ‹objref›get list of children
+Toppath (object)
+path ‹objref› ‹from› ‹to› [‹maxflood›]set object path, returns success
+Toppeek (misc)
+peek ‹address›peek
+Topperfoptions (misc)
+perfoptions ‹setting›get current setting
+perfoptions ‹setting› ‹value›change setting
+Topperfwin (misc)
+perfwin 0/1hide/show performance-window
+Topplacelock_log (map)
+placelock_log [‹id›]dump placelocks to logger
+Topplayerinfo (misc)
+playerinfo ‹ownerid›
+Toppoke (misc)
+poke ‹address› ‹value›poke
+Topprint (misc)
+print args...print to console
+Topprod_assignworker (obj)
+prod_assignworker ‹objref› ‹prodplace›announce worker assignment
+Topprod_get_task_active_places (prod)
+prod_get_task_active_places ‹owner› ‹class›get list of prodplaces with active slots for this class
+Topprod_get_task_all_places (prod)
+prod_get_task_all_places ‹owner› ‹class›get list of prodplaces that can build this class
+Topprod_get_task_total_cnt (prod)
+prod_get_task_total_cnt ‹owner› ‹class›get total number of production tasks for this class
+Topprod_gnome_get_last_workplace (obj)
+prod_gnome_get_last_workplace ‹objref›get last work place
+Topprod_gnome_get_preferred_workplace (obj)
+prod_gnome_get_preferred_workplace ‹objref›get preferred work place
+Topprod_gnome_last_workplace (obj)
+prod_gnome_last_workplace ‹objref› [‹work-place›]announce current work place
+Topprod_gnome_preferred_workplace (obj)
+prod_gnome_preferred_workplace ‹objref› [‹work-place›]announce preferred work place
+Topprod_gnome_state (obj)
+prod_gnome_state ‹objref› unknownset current gnome state
+prod_gnome_state ‹objref› idleset current gnome state
+prod_gnome_state ‹objref› sparetimeset current gnome state
+prod_gnome_state ‹objref› walk [‹from›] ‹to›set current gnome state
+prod_gnome_state ‹objref› guard ‹pos›set current gnome state
+prod_gnome_state ‹objref› fight ‹enemyref›set current gnome state
+prod_gnome_state ‹objref› build ‹prodref› ‹class›set current gnome state
+prod_gnome_state ‹objref› invent ‹prodref› ‹class›set current gnome state
+prod_gnome_state ‹objref› pickup ‹prodref›set current gnome state
+prod_gnome_state ‹objref› putdown ‹prodref›set current gnome state
+prod_gnome_state ‹objref› pack ‹prodref›set current gnome state
+prod_gnome_state ‹objref› unpack ‹prodref› ‹destpos›set current gnome state
+prod_gnome_state ‹objref› transport ‹itemref› ‹destpos›set current gnome state
+prod_gnome_state ‹objref› harvest ‹itemref›set current gnome state
+prod_gnome_state ‹objref› dig ‹destpos›set current gnome state
+prod_gnome_state ‹objref› explore ‹destpos›set current gnome state
+Topprod_gnomeidle (obj)
+prod_gnomeidle ‹objref› [true|false]announce worker is idle
+Topprod_guest (obj)
+prod_guest addlink ‹objref› ‹linkid›add link to guest places, returns new index
+prod_guest setlink ‹objref› ‹index› ‹linkid›set link for guest places, returns index
+prod_guest getlink ‹objref› ‹index›get link id for guest place
+prod_guest guestset ‹objref› ‹index› ‹guestref›set guest occupying place 
+prod_guest guestget ‹objref› ‹index›get guest occupying place 
+prod_guest guestfree ‹objref›find free guest index
+prod_guest guestremove ‹objref› ‹guestref›remove guest from place and returns index
+prod_guest addorder ‹objref› ‹index›increment order count for index
+prod_guest getorder ‹objref› ‹index›get order count for index
+prod_guest remorder ‹objref› ‹index›decrement order count for index
+prod_guest resetorder ‹objref› ‹index›reset order count for index
+prod_guest nextorder ‹objref›get order index with highest ordercount
+Topprod_valid (misc)
+prod_valid ‹obj› ‹prod›checks if is a non boxed, non contained, build and valid object with the same owner like 
+Topproddump (object)
+proddump ‹player›dump prodplanner state
+Topprodslot_override (misc)
+prodslot_override resetreset all prodslot overrides
+prodslot_override normal ‹index›remove prodslot override
+prodslot_override disable ‹index›remove prodslot override
+prodslot_override hide ‹index›remove prodslot override
+prodslot_override query ‹index›get prodslot override state
+Topqnew (object)
+qnew ‹class-name› [‹creation-param›]create new object, returns reference
+Topquit (misc)
+quitquit game
+Toprandom (misc)
+randomget random number 0..1
+random ‹upper bound›get random number 0..upper bound
+random ‹lower bound› ‹upper bound›get random number lower bound..upper bound
+Topreconnect (misc)
+reconnect (‹log›) (‹stat›) (‹news›)Logger NewsAgent and StatusMonitor
+Topref2path (object)
+ref2path ‹objref›get path from reference
+Topref_checkvar (object)
+ref_checkvar ‹objref› ‹varname›check for variable in any object
+Topref_get (object)
+ref_get ‹objref› ‹varname›get variable in any object
+Topref_set (object)
+ref_set ‹objref› ‹varname› ‹value›set variable in any object
+Toprelease_energy (misc)
+release_energy ‹obj›releases energy on an energysource
+Toprem_fsource (misc)
+rem_fsource ‹object›remove fsource of this object
+Toprem_fstopper (misc)
+rem_fstopper ‹object›remove influence to water of an object
+Topremove_black_fog (map)
+remove_black_fog ‹player› ‹left› ‹top› ‹right› ‹bottom›reset maparea
+Topremove_parked_obj (misc)
+remove_parked_obj ‹obj›removes object action from "parking lot"
+Toprender_enable (misc)
+render_enable ‹newstate›loading done
+Toprender_gray (misc)
+render_gray [‹newstate›]get/set gray rendering
+Topreset_anim (graphics)
+reset_anim ‹objref›reset anim on current object
+Topreset_map (map)
+reset_map ‹left› ‹top› ‹right› ‹bottom›reset maparea
+Topreset_owner_attribs (misc)
+reset_owner_attribs
+Toprestore_obj_actions (misc)
+restore_obj_actionsrestores previously parked actions
+Toprjreusecheck (misc)
+rjreusecheck ‹bool›enable/disable rj-reusecheck
+Topsave_map (misc)
+save_map {‹rect›} ‹name›saves map to disk
+Topsave_scene (misc)
+save_scene ‹name›saves map to disk
+Topscreen2world (misc)
+screen2worldtransform vertex from world to screen (z-value is z in scape)
+Topscreen3world (misc)
+screen3worldtransform vertex from world to screen
+Topscreen_mode (misc)
+screen_mode ‹x› ‹y› ‹fullscreen›
+Topscroller (misc)
+scroller runningcheck if scroller is running
+scroller stopstop scroller
+scroller start ‹filename›start scroller
+Topscrollrange (misc)
+scrollrange [‹newrange›]set/get scrollrange range is 4-ele-list {left top right bottom}
+Topsel (object)
+sel ‹objref›select object
+Topselection (misc)
+selection check ‹objref›
+selection include ‹objref›
+selection exclude ‹objref›
+selection caninclude ‹objref›
+selection clear
+Topseq_audiostream (misc)
+seq_audiostream open ‹filename›
+seq_audiostream play (‹start› ‹stop›)
+seq_audiostream stop
+seq_audiostream close
+Topset_activegameplay (object)
+set_activegameplay ‹objref› ‹newstate›enable/disable object gameplay (event & state handling)
+Topset_alternateanimdb (object)
+set_alternateanimdb ‹objref› ‹bool›set object alternate anim
+Topset_anim (graphics)
+set_anim ‹objref› ‹anim-name› ‹start frame› ‹play mode› ‹continue›set anim on current object
+Topset_attackinprogress (object)
+set_attackinprogress ‹objref› ‹bPrg›set attackinprogress
+Topset_attrib (attrib)
+set_attrib ‹objref› ‹attribname› ‹value›set new attribute value, returns new value
+Topset_autolight (object)
+set_autolight ‹objref› ‹newstate›set object autolight
+Topset_boxed (object)
+set_boxed ‹objref› ‹newstate›set object boxed / unpacked
+Topset_brightness (misc)
+set_brightness ‹brighness›set brightness (0..2)
+Topset_buildupstate (object)
+set_buildupstate ‹objref› ‹newstate›set object boxed / unpacked
+Topset_camerafollow (object)
+set_camerafollow ‹objref› (‹zoom›)(camera follows object, -1 disables follow-mode, zoom 1.0 - 2.5
+Topset_class_anim (class)
+set_class_anim ‹animname› ‹animname› (‹info›)set animations for class
+Topset_class_animset (class)
+set_class_animset id {...}set animset for class
+Topset_climbability (object)
+set_climbability ‹objref› ‹newstate›sets the ability to climb (for pathfinding)
+Topset_cloaked (object)
+set_cloaked ‹objref› ‹newstate›set if object (gnome) is cloaked
+Topset_collision (object)
+set_collision ‹objref› ‹newstate›enable/disable object collision
+Topset_contrast (misc)
+set_contrast ‹contrast›set contrast (0..2)
+Topset_diplomacy (misc)
+set_diplomacy ‹owner› ‹owner› ‹ally/friend/neutral/enemy›sets owner diplomacy state
+Topset_doorproperties (obj)
+set_doorproperties ‹objref› ‹mode› [‹classlist›]set properties for door
+mode:	open,
+closed,
+openforplayer,
+openforfriends,
+openforclasses,
+openforall,
+Topset_elevatorproperties (obj)
+set_elevatorproperties ‹objref› ‹maxrange› ‹accelerationtype› ‹acceleration/speed› ‹brakeacceleration› ‹maxusers›set elevator properties
+Topset_energyclass (obj)
+set_energyclass ‹objref› ‹energyclass›set energy value the of object
+Topset_energyconsumption (obj)
+set_energyconsumption ‹objref› ‹value›set need of energy during production
+Topset_energymaxstore (obj)
+set_energymaxstore ‹objref› ‹value›set the energy store of an energysource
+Topset_energyrange (obj)
+set_energyrange ‹objref› ‹range›set energy range the of object
+Topset_energystore (obj)
+set_energystore ‹objref› ‹value›set the energy store of an energysource
+Topset_event (event)
+set_event ‹srcobjref› ‹eventtype› params...set new event, params: -target(obj), -subject1(obj), -subject2(obj)
+-subject3(obj), -text1(string), -text2(string), -num1(num), -num2(num), -num3(num)
+-pos1(packed vector), -pos2(packed vector), -pos3(packed vector), -delay(seconds)
+Topset_eventenabled (event)
+set_eventenabled ‹event name› ‹player-id› ‹newstate›enable or disable event
+Topset_fogofwar (object)
+set_fogofwar ‹object› ‹sizex› ‹sizey›sets size of Fog of War
+Topset_forceipol (object)
+set_forceipol ‹objref› ‹newstate›enable/disable object forceipol
+Topset_fov (misc)
+set_fov ‹fov›set fov. default=0.8
+Topset_fow_begin (misc)
+set_fow_begin ‹num› ‹player›sets the Y-beginning of fog of war
+Topset_fsource (misc)
+set_fsource ‹object› ‹params›set fsource properties
+-pos -relative position of watersource to object
+-type -set type of source
+-volume -set volume of the source
+-height -set height of water over the source
+-vpf -set volume output per frame
+Topset_fstopper (misc)
+set_fstopper ‹object› {x0 y0} {x1 y1} ‹factor›set influence to water of an object
+Topset_ground_begin (misc)
+set_ground_begin ‹num›sets the Y-beginning of the ground
+Topset_hoverable (object)
+set_hoverable ‹objref› ‹newstate›set object hoverability
+Topset_icon (object)
+set_icon ‹objref› ‹iconname›set object icon
+Topset_ingame_loading (misc)
+set_ingame_loading ‹true/false›activate/deactivate ingame levelloading
+Topset_instore (object)
+set_instore ‹objref› ‹newstate›set if object is in a stores inventory
+Topset_inventoryslotuse (obj)
+set_inventoryslotuse ‹objref› ‹value›set of inventory slots
+Topset_invulnerable (object)
+set_invulnerable ‹objref› ‹newstate›set if object (creature) is invulnerable
+Topset_ladderrange (obj)
+set_ladderrange ‹objref› ‹maxrange›set range of a ladder
+Topset_level (misc)
+set_level ‹x› ‹y› ‹iType›autogenerate level
+Topset_light (object)
+set_light ‹object› ‹on/off›switches the light of the object on/off
+Topset_light_begin (misc)
+set_light_begin ‹num›sets the Y-beginning of light and ground
+Topset_lock (object)
+set_lock ‹objref› ‹newstate›set object lock
+Topset_logactions (object)
+set_logactions ‹objref› ‹newstate›set object action logging
+Topset_maxprodera (misc)
+set_maxprodera ‹player› ‹era›set maximum displayed production era
+Topset_obj_logicfogskip (object)
+set_obj_logicfogskip ‹objref› ‹skipcount›set object logic fog skip count
+Topset_obj_logicskip (object)
+set_obj_logicskip ‹objref› ‹skipcount›set object logic skip count
+Topset_objectcollision (object)
+set_objectcollision ‹objref› ‹newstate›enable/disable object objectcollision
+Topset_objgender (object)
+set_objgender ‹objref› ‹male|female|neutral›set object gender
+Topset_objicon (object)
+set_objicon ‹objref› ‹idx› ‹type› ‹value› ‹duration›set object info icon
+Topset_objiconoffset (object)
+set_objiconoffset ‹objref› ‹yoffset›set object info icon offset
+Topset_objinfo (object)
+set_objinfo ‹objref› ‹text›set object info text
+Topset_objname (object)
+set_objname ‹objref› ‹name›set object name
+set_objname ‹objref› auto male|femaleset object name
+Topset_objvariation (misc)
+set_objvariation ‹object› ‹variation›set variation for object
+set variation for object
+Topset_objworkicons (object)
+set_objworkicons ‹objref› [‹iconname›...]set object info icon
+Topset_owner (object)
+set_owner ‹object› ‹num› [‹collisionhandler›] [‹successhandler›]sets the owner of an object
+Topset_owner_attrib (attrib)
+set_owner_attrib ‹owner-id› ‹attrib› ‹value›set attribute for specified owner, returns new value
+Topset_ownerrace (object)
+set_ownerrace ‹owner› ‹race›sets race of an owner
+Topset_particlesource 
+set_particlesource ‹objref› ‹srcidx› ‹activity›sets activity mode of particlesources
+Topset_pf_influence (object)
+set_pf_influence ‹objref› ‹left› ‹top› ‹right› ‹bottom› ‹costs› ‹flags›sets the pathfinding influence rectangle for the object (block-coordinates,int)
+Topset_physic (object)
+set_physic ‹objref› ‹newstate›set object physic
+Topset_placesnapmode (object)
+set_placesnapmode ‹objref› ‹newstate›set object snap to wall while placing
+Topset_pos (object)
+set_pos ‹objref› ‹x› ‹y› ‹z›set current object's position
+set_pos ‹objref› ‹vector›set current object's position
+Topset_posbottom (object)
+set_posbottom ‹objref› ‹x› ‹y› ‹z›set current object's bottom's position
+set_posbottom ‹objref› ‹vector›set current object's bottom's position
+Topset_posx (object)
+set_posx ‹objref› ‹x›set current object's x position
+Topset_posy (object)
+set_posy ‹objref› ‹y›set current object's y position
+Topset_posz (object)
+set_posz ‹objref› ‹z›set current object's z position
+Topset_processactions (object)
+set_processactions ‹objref› ‹newstate›enable/disable object collision
+Topset_prod_buildup (obj)
+set_prod_buildup ‹object› ‹newstate›set object unpack task state
+Topset_prod_directevents (obj)
+set_prod_directevents ‹objref› ‹true/false›set switched production mode
+Topset_prod_enabled (obj)
+set_prod_enabled ‹objref› ‹newstate›enable or disable production
+Topset_prod_exclusivemode (obj)
+set_prod_exclusivemode ‹objref› ‹true/false›set exclusive production mode
+Topset_prod_materialneed (obj)
+set_prod_materialneed ‹objref› ‹true/false›set the need of materials
+Topset_prod_ownerstrength (obj)
+set_prod_ownerstrength ‹object› ‹newstrength›set object owner strength
+Topset_prod_pack (obj)
+set_prod_pack ‹object› ‹newstate›set object pack task state
+Topset_prod_schedule (obj)
+set_prod_schedule ‹objref› ‹true/false›set switched production mode
+Topset_prod_slot_cnt (obj)
+set_prod_slot_cnt ‹object› ‹itemclass› ‹newcount›set task count for production slot
+Topset_prod_switchmode (obj)
+set_prod_switchmode ‹objref› ‹true/false›set switched production mode
+Topset_prod_toolneed (obj)
+set_prod_toolneed ‹objref› ‹true/false›set the need of tools
+Topset_prod_unpack (obj)
+set_prod_unpack ‹object› ‹newstate›set object unpack task state
+Topset_prodalloclock (object)
+set_prodalloclock ‹objref› ‹newstate›set production alloc state
+Topset_prodautoschedule (object)
+set_prodautoschedule ‹objref› ‹newstate›set production auto schedule
+Topset_renderlast (object)
+set_renderlast ‹objref› ‹newstate›set object selectability
+Topset_rendermaterial (obj)
+set_rendermaterial ‹objref› ‹materialname›set object rendering material
+Topset_rot (object)
+set_rot ‹objref› ‹x› ‹y› ‹z›set current object's rotation
+set_rot ‹objref› ‹vector›set current object's rotation
+Topset_rotx (object)
+set_rotx ‹objref› ‹x›set current object's x rotation
+Topset_roty (object)
+set_roty ‹objref› ‹y›set current object's y rotation
+Topset_rotz (object)
+set_rotz ‹objref› ‹z›set current object's z rotation
+Topset_run_info (misc)
+set_run_info info-textset current load info
+Topset_selectable (object)
+set_selectable ‹objref› ‹newstate›set object selectability
+Topset_selectedobject (misc)
+set_selectedobject [‹objref›]change selection
+Topset_sequence (misc)
+set_sequence ‹enabled›enables or disables sequence playing
+Topset_sequenceactive (object)
+set_sequenceactive ‹objref› ‹newstate›set object selectability
+Topset_shield_class (object)
+set_shield_class ‹object› ‹num›sets the Shield ID
+Topset_snaptowall (object)
+set_snaptowall ‹objref› ‹newstate›set object snap to wall
+Topset_speechout (misc)
+set_speechout ‹duration› ‹coltextlist› (‹ForceShow›)speech while sequence playing
+Topset_split_load (misc)
+set_split_load ‹true/false›de/activates split_load mode
+Topset_storable (object)
+set_storable ‹objref› ‹newstate›set object lock
+Topset_textureanimation (object)
+set_textureanimation ‹objref› ‹submesh› ‹framelist› [‹frame=0› ‹animtype=2›]set texture animation
+Topset_texturevariation (obj)
+set_texturevariation ‹objref› ‹num0›.. ‹num15›sets the texturevariation of the object
+Topset_undeletable (object)
+set_undeletable ‹objref› ‹newstate›set if object is undeletable
+Topset_user_groups (object)
+set_user_groups ‹objref› ‹list›set list of user group assignments
+Topset_vel (object)
+set_vel ‹objref› ‹x› ‹y› ‹z›set current object's velocity
+set_vel ‹objref› ‹vector›set current object's velocity
+Topset_view (misc)
+set_view ‹x› ‹y› ‹zoom› [‹dx› ‹dy› [‹move›] [‹freeze›] [‹speed›] [‹set›]]set view pos, zoom and optionally rotation
+Topset_view_begin (misc)
+set_view_begin ‹num›sets the Y-beginning of the view
+Topset_viewinfog (object)
+set_viewinfog ‹objref› ‹newstate›set object visibility in fog of war
+Topset_viewpos (misc)
+set_viewpos ‹x› ‹y› ‹z› ‹zoom› ‹dx› ‹dy› [‹move›] [‹freeze›] [‹speed›] [‹cameraset›]set view pos, zoom and optionally rotation
+Topset_visibility (object)
+set_visibility ‹objref› ‹newstate›set visibility
+Topset_water (misc)
+set_water ‹bool›enable/disable water
+Topset_weapon_class (object)
+set_weapon_class ‹object› ‹num›sets the Weapon ID
+Topset_worktime (object)
+set_worktime ‹object› ‹start› ‹duration›set worktime start and duration
+set_worktime ‹object› start ‹start›set worktime start
+set_worktime ‹object› duration ‹duration›set worktime duration
+Topshader (shaders)
+shader define ‹shadername› ‹def-list›define shader
+Topshow_fogofwar (misc)
+show_fogofwar ‹newstate›show or hide fog of war
+Topshow_loading (misc)
+show_loading ‹newstate› (‹progress›)show or hide load screen
+Topshow_maped (misc)
+show_mapedshow map editor
+Topsleep (misc)
+sleep ‹milliseconds›pause execution
+Topsm_add_event (misc)
+sm_add_event ‹name› [‹triggerclass›] [‹triggermsg›]Add Story Event
+event will be setted as fulfilled if trigger of sends to StoryMgr
+default is "activate"
+Topsm_add_temp (misc)
+sm_add_temp ‹name› [‹miny›] [‹maxy›] [‹params›...]Add Unique Template
+miny -	minimum depth for unique template
+maxy -	maximum depth for unique template
+params are:	-events required events
+-mindist minimal distance from template
+-digconnect connect unique template with linkidx (default=0)
+-connect { { }... }
+-exclusive (default=false)
+-zoneborder 
+-nonrelevant nonrelevant Template(group)
+-middist 
+-stoneidx template index (in templategroup) for stoneborder
+Topsm_add_zone (misc)
+sm_add_zone ‹zone›adds a new zone
+Topsm_create_map (misc)
+sm_create_map ‹w› ‹h›defines the map
+Topsm_def_temp_group (misc)
+sm_def_temp_group ‹name› ‹templist›Defines Unique Template Group (copy'n paste from LevelEditor output)
+	-	{{  } {  } ...{mat {type x y w h} ... }}
+Topsm_dig_message (misc)
+sm_dig_message ‹true/false›Activates callback dig messages
+Topsm_draw_stone (misc)
+sm_draw_stone [‹params›...]Sets map material to Stone
+params are:	-border Map Border
+-rect 
+-exlimit	Limitation of exclisive Unique Templates
+-utmat Draws Materials defined in Unique Template Group
+-matlist Draws Materials (LevelEditor Output)
+Topsm_force_zone (misc)
+sm_force_zone ‹zone›forces minimal zone for levelgenerating
+Topsm_get_event (misc)
+sm_get_event ‹name›Check if Story Event is fulfilled
+Topsm_get_level_info (misc)
+sm_get_level_info ‹x› ‹y›get info for level generation
+Topsm_get_resolution (misc)
+sm_get_resolutionreturns map resolution
+Topsm_get_temppos (misc)
+sm_get_temppos ‹templatename›returns unique templates pos
+Topsm_get_zone (misc)
+sm_get_zone ‹y›returns zone at y
+Topsm_log (misc)
+sm_logLog
+Topsm_map_get (misc)
+sm_map_get ‹x› ‹y›get map area status
+Topsm_map_move (misc)
+sm_map_move ‹x› ‹y›moves map
+Topsm_map_set (misc)
+sm_map_set ‹x› ‹y› [‹w› ‹h›]set map area as setted
+Topsm_mark_temparea (map)
+sm_mark_temparea ‹x› ‹y› ‹template›marks area of template
+Topsm_music_theme (misc)
+sm_music_theme ‹theme› ‹triggerclass› [‹mode›]binds music themes to triggers
+	-			sets marker at trigger position when trigger is created
+	-			changes music theme on trigger activation
+	-				(default) maker and instant
+Topsm_register (object)
+sm_register ‹object› ‹callback›Register Story Manager with callback
+Topsm_reset (misc)
+sm_resetReset Story Manager
+Topsm_scan (misc)
+sm_scanreturns position of DigMark
+Topsm_send_message (object)
+sm_send_message ‹object› ‹message›Send Message for Story Event
+Topsm_set_digcount (misc)
+sm_set_digcount ‹maxdigcount›Set digcount
+Topsm_set_event (misc)
+sm_set_event ‹name› (‹bool›)Set Story Event as fulfilled
+Topsm_set_temp (misc)
+sm_set_temp ‹level›set unique templates as setted
+Topsm_set_zone (misc)
+sm_set_zone ‹id› ‹y›Set Story Event as fulfilled
+Topsmalltalk (misc)
+smalltalk add ‹key› ‹text›adds smalltalk (theme) text
+smalltalk get ‹key›returns all texts of the key theme
+Topsnap (obj)
+snap ‹objref2› ‹objref1›snaps obj1 to obj2, assumes same rotation vector
+Topsound (sound)
+sound volume [‹new-volume›]set/get effect volume
+sound bind ‹logic-name› ‹file-name›map a logic sample-name to a wav-file
+sound anim ‹anim-name› ‹frame› ‹sound-name› [‹material› [‹room› [‹volume› [‹pitch› [‹vol-variance› [‹pitch-variance›]]]]]add anim sound event
+ - anim id (get from [db_find_anim ])
+ - frame index
+ - optional material associated with sound. default=any
+ - room where sound is played. default=any
+ - optional base volume (0.. n) default= 1.0 = original
+ - optional base pitch (0.. n) default= 1.0 = original
+ - optional volume variance (0.. n) default= 0.0
+ - optional pitch variance (0.. n) default= 0.0
+Materials are: any, sand, soil, stone, wood, metal, water, lava
+Rooms are: any, tunnel, small, medium, big
+Variance values are multiplied with a random value (0..1) and ADDED to the base value.
+Example: volume=0.5 vol-var=0.2 -> range of possible volumes: 0.5-0.7
+Example:
+sound anim $DB_GNOME_M [db_findanim $DB_GNOME_M mann gehen_loop] 5 snd_step02
+play "snd_step02" on frame 5 of anim "gehen_loop" in object "mann" from database id DB_GNOME_M (maps to "mann.3db")
+sound animnoseq ‹anim-name› ‹frame› ‹sound-name› [‹material› [‹room› [‹volume› [‹pitch› [‹vol-variance› [‹pitch-variance›]]]]]add anim sound event
+sound play ‹sound-name› ‹volume› [‹position›]play sound at current view or given position
+sound playglobal ‹sound-name› ‹volume›play global
+sound animsound [‹new-state›]enable/disable anim sounds
+Topsparetime (misc)
+sparetime ‹obj› announce ‹category›adds sparetimeplace to list
+sparetime ‹obj› disannounceremoves sparetimeplace from list
+sparetime ‹obj› queryrange	‹category› ‹rng›queries sparetimeplaces
+sparetime ‹obj› queryrect	‹category› ‹xn› ‹yn› ‹xp› ‹yp›queries sparetimeplaces
+Topspeechicon (misc)
+speechicon ‹objref› add ‹text› ‹timeout› (‹lipsync=0›) (‹visibility=1›)add text
+speechicon ‹objref› clearremove all text
+speechicon ‹objref› lock ‹x› ‹y›lock text to screen pos (%)
+speechicon ‹objref› unlockunlock text
+Topstart_fade (misc)
+start_fade ‹seconds› ‹in/out›start fade. in/out=true -> fadein false -> fadeout
+Topstartcache (misc)
+startcache enabled
+startcache present
+startcache load
+startcache write
+Topstate (states)
+state ‹state-name› ‹code›define class-specific state
+Topstate_disable (states)
+state_disable ‹objref›decrease state enable count
+Topstate_enable (states)
+state_enable ‹objref›increase state enable count
+Topstate_enter (states)
+state_enter ‹state-name› ‹code›define class-specific state
+Topstate_get (states)
+state_get ‹objref›get current state
+Topstate_getenablecnt (states)
+state_getenablecnt ‹objref›get current state enable count
+Topstate_leave (states)
+state_leave ‹state-name› ‹code›define class-specific state finish code
+Topstate_reset (states)
+state_reset ‹objref›reset state enable count
+Topstate_trigger (states)
+state_trigger ‹objref› (‹new_state›)trigger new state, if no param, leave state machine
+Topstate_triggerfresh (states)
+state_triggerfresh ‹objref› (‹new_state›)trigger new state, reset, enable, if no param, leave state machine
+Toptalkissue (misc)
+talkissue ‹obj›	add	‹key› ‹val›adds talkissue value
+talkissue ‹obj›	set	‹key› ‹val›sets talkissue value
+talkissue ‹obj›	get	‹key›gets talkissue value
+talkissue ‹obj›	delete ‹key›dels talkissue entry
+talkissue ‹obj›	reduce ‹key› ‹fac›reduces all talkissue values by 
+talkissue ‹obj›	sumadds talkissue value
+talkissue ‹obj›	listadds talkissue value
+Toptasklist_add (object)
+tasklist_add ‹objref› ‹taskname›add new entry to task list (at end)
+Toptasklist_addfront (object)
+tasklist_addfront ‹objref› ‹taskname›add new entry to task list (at start)
+Toptasklist_clear (object)
+tasklist_clear ‹objref›clear task list
+Toptasklist_cnt (object)
+tasklist_cnt ‹objref›get number of entries in task list
+Toptasklist_find (object)
+tasklist_find ‹objref› ‹entry›find index of entry or -1
+Toptasklist_get (object)
+tasklist_get ‹objref› ‹index›get entry from task list
+Toptasklist_list (object)
+tasklist_list ‹objref›get task list
+Toptasklist_rem (object)
+tasklist_rem ‹objref› ‹index›remove entry from task list, returns removed text
+Toptclhelp (misc)
+tclhelp ‹command›show help for command
+Toptemplate_set (misc)
+template_set ‹name› ‹templatelist›set templatesets
+Toptextstage (shaders)
+textstage define ‹stagename› ‹def-list›define texture stage
+Toptextwin (misc)
+textwin show
+textwin hide
+textwin run ‹scriptname›
+textwin deflink ‹id› ‹scriptname›
+textwin print ‹text›
+textwin clear
+textwin info [mode]
+Toptime_line_log (misc)
+time_line_log ‹msg›add log entry
+Toptime_schedule (misc)
+time_schedule ‹curtime› ‹starttime› ‹endtime› [‹timespec›...]time scheduler
+Each specifier is a list with the first element being the action name
+and the rest
+Toptimer_event (event)
+timer_event ‹objref› ‹eventtype› params...set timer event, params: -subject1(obj), -subject2(obj)
+-subject3(obj), -text1(string), -text2(string), -num1(num), -num2(num), -num3(num)
+-userid(num), -attime(num), -repeat(num), -interval(num)
+-pos1(vector), -pos2(vector), -pos3(vector)
+Toptimer_unset (event)
+timer_unset ‹objref› ‹user-id›kill timer with given id
+Toptoggle_wf (misc)
+toggle_wftoggle wireframe
+Toptransfer_attribs (attrib)
+transfer_attribs ‹objrefsrc› ‹objrefdest›transfers all attribs to another object
+Toptrigger (trigger)
+trigger create ‹objref› ‹type› ‹code›create new trigger on object
+type can be single_timer, repeat_timer, any_object, unique_object or callback
+single_timer goes active after a specified time
+repeat_timer goes active for one update after a specified time, then goes inactive and repeats
+any_object goes active when the given number of matching objects is in range
+unique_object goes active when the exact specified object is in range
+callback goes active if the callback returns true
+trigger delete ‹objref›remove trigger from object
+trigger set_execution ‹objref› ‹executiontype›set execution type
+never - code does not execute
+always - code does execute on every update regardless of result
+on_activate - code does execute when condition changes from false to true
+on_inactivate - code does execute when condition changes from true to false
+when_active - code does execute when condition is true
+when_inactive - code does execute when condition is true
+trigger set_timer ‹objref› ‹seconds›set timer start time / interval
+trigger set_checktimer ‹objref› ‹seconds›set trigger check interval. default is 5 seconds
+trigger set_target_range ‹objref› ‹range›set object scan range
+trigger set_target_ref ‹objref› ‹targetref›set unique target object ref
+trigger set_target_type ‹objref› ‹targettype›set object scan type (none dummy gnome baby monster material tool production energy box blueprint store elevator)
+objects of this type match the trigger condition for any_object
+trigger set_target_class ‹objref› ‹targetclass›set object scan class name
+objects of this class match the trigger condition for any_object. Setting
+an object class disables type matching
+trigger set_target_owner ‹objref› ‹owner›set object scan class owner
+trigger set_target_count ‹objref› ‹objectcount›set number of matching objects to fire
+trigger set_callback ‹objref› ‹tclcode›set callback. if this returns true, the trigger fires.
+trigger set_active ‹objref›set trigger active. may change on next update
+trigger set_inactive ‹objref›set trigger inactive. may change on next update
+trigger get_actuators ‹objref›returns list of actuators
+Topuncapturemouse (misc)
+uncapturemouseuncapture mouse
+Topupdate_objdetail (misc)
+update_objdetailupdates object detail level
+Topvector_abs (misc)
+vector_abs ‹vector›get length of vector
+Topvector_add (misc)
+vector_add ‹vector› ‹vector›get sum of vertices
+Topvector_angle (misc)
+vector_angle ‹vector› ‹vector›get XZ angle of difference vector
+Topvector_dist (misc)
+vector_dist ‹vector› ‹vector›get distance of vertices (2d)
+Topvector_dist3d (misc)
+vector_dist3d ‹vector› ‹vector›get distance of vertices (3d)
+Topvector_fix (misc)
+vector_fix ‹vector›get next reachable position
+Topvector_fixdig (misc)
+vector_fixdig ‹vector› ‹vector›get next reachable position in destination of the 2nd Parameter
+Topvector_inbox (misc)
+vector_inbox ‹vector› ‹boxneg› ‹boxpos›checks if vector is in box
+Topvector_mul (misc)
+vector_mul ‹vector› ‹factor›multiplicates vector with factor
+Topvector_normalize (misc)
+vector_normalize ‹vector›normalize vector
+Topvector_pack (misc)
+vector_pack ‹x› ‹y› ‹z›pack vector to list
+Topvector_random (misc)
+vector_random ‹x› ‹y› ‹z›create random vector with given bounds
+Topvector_rotx (misc)
+vector_rotx ‹vector› ‹xrot›rotates vector
+Topvector_roty (misc)
+vector_roty ‹vector› ‹yrot›rotates vector
+Topvector_rotz (misc)
+vector_rotz ‹vector› ‹zrot›rotates vector
+Topvector_setx (misc)
+vector_setx ‹vector› ‹new_x›copy vector, use different x value
+Topvector_sety (misc)
+vector_sety ‹vector› ‹new_y›copy vector, use different y value
+Topvector_setz (misc)
+vector_setz ‹vector› ‹new_z›copy vector, use different z value
+Topvector_sub (misc)
+vector_sub ‹vector› ‹vector›get difference of vertices
+Topvector_unpackx (misc)
+vector_unpackx ‹vector›unpack vector x component
+Topvector_unpacky (misc)
+vector_unpacky ‹vector›unpack vector y component
+Topvector_unpackz (misc)
+vector_unpackz ‹vector›unpack vector z component
+Topviewlock (misc)
+viewlock [‹newstate›]viewlock []@lock view, disable camera control
+Topvtune (misc)
+vtune (start|stop)start/stop vtune sampling
+Topwaterdbg (misc)
+waterdbg ‹bool›enable/disable water-debug-view
+
