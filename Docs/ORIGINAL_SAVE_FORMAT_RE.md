@@ -150,7 +150,12 @@ patterns. The payload is:
 6. eight fog-of-war sparse arrays;
 7. marker `4`.
 
-The six leading values in the available saves are `width`, `height`, `0`, `0`, `width`, `height`.
+The six leading values are `width`, `height`, `minX`, `minY`, `maxXExclusive`,
+and `maxYExclusive`. Late-campaign saves can have a nonzero `minY` (for example,
+`512, 640, 0, 660, 512, 1300`). With full-width rows and `minX == 0`, the
+archive stores the native ring buffer in storage order. Absolute tile `(x, y)`
+is at `(y * width + x) % (width * height)`. See the native tile indexer
+`FUN_00592f10` in [ORIGINAL_PATHFINDING_RE.md](ORIGINAL_PATHFINDING_RE.md).
 The loader derives the terrain record count from the first two values.
 
 ### Terrain record

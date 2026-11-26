@@ -55,6 +55,38 @@ namespace Diggles.Runtime.Save
         public int OriginY => MinY;
         public int LogicalWidth => MaxXExclusive;
         public int LogicalHeight => MaxYExclusive;
+        internal bool HasOffset => OriginX != 0 || OriginY != 0;
+        internal int RuntimeWidth => HasOffset ? LogicalWidth : Width;
+        internal int RuntimeHeight => HasOffset ? LogicalHeight : Height;
+
+        internal bool ContainsArchivedTile(int x, int y) =>
+            (ulong)((long)x - OriginX) < (uint)Width &&
+            (ulong)((long)y - OriginY) < (uint)Height;
+
+        // The native CMap keeps Width*Height tiles in a ring buffer: absolute tile (x, y)
+        // lives at (y * Width + x) % (Width * Height) (tile indexer FUN_00592f10, see
+        // ORIGINAL_PATHFINDING_RE.md §1; FUN_005931f0 persists that buffer in index order).
+        // For an origin-0 world this is the identity. All observed offset saves have
+        // MinX == 0 and full-width rows, so only vertical offsets are accepted.
+        internal void ArchivedTileOf(int archiveIndex, out int x, out int y)
+        {
+            int storageRow = archiveIndex / Width;
+            x = archiveIndex - storageRow * Width + OriginX;
+            int rowOffset = (storageRow - OriginY) % Height;
+            if (rowOffset < 0) rowOffset += Height;
+            y = OriginY + rowOffset;
+        }
+
+        internal void ValidateRuntimeBounds()
+        {
+            // Keep the same allocation ceiling as the archive reader, including padding.
+            const int maximumTiles = 4 * 1024 * 1024;
+            if (HasOffset && (OriginX != 0 || OriginY < 0 ||
+                (long)OriginX + Width != RuntimeWidth ||
+                (long)OriginY + Height != RuntimeHeight ||
+                (long)RuntimeWidth * RuntimeHeight > maximumTiles))
+                throw new System.IO.InvalidDataException("The offset save world has unsupported map bounds.");
+        }
         public OriginalSaveTerrainCollection Terrain { get; }
         public OriginalSaveFluidDocument Fluid { get; }
         public OriginalSaveFogDocument Fog { get; }

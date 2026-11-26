@@ -87,7 +87,11 @@ namespace Diggles.Runtime.Save
 
             OriginalSaveRuntimeSnapshot? baseline = _baselineStore.Baseline;
             if (baseline != null && ReferenceEquals(_baselineStore.Owner, session))
+            {
+                if (baseline.SourceDocument.World.HasOffset)
+                    throw new NotSupportedException("Writing a save from an offset snapshot is not supported yet.");
                 return (path, session, context, baseline);
+            }
 
             if (baseline != null) _baselineStore.Clear();
             return (path, session, context, null);
