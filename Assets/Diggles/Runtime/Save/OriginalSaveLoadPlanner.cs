@@ -1116,16 +1116,17 @@ namespace Diggles.Runtime.Save
 
         static void ValidateFog(OriginalSaveWorldDocument world)
         {
+            world.ValidateRuntimeBounds();
             for (int player = 0; player < world.FogBeginRows.Count; player++)
             {
                 int row = world.FogBeginRows[player];
-                if (row < -1 || row >= world.Height)
+                if (row < -1 || row >= world.RuntimeHeight)
                     throw new InvalidDataException(
                         $"Original fog begin row {row} is outside the world for player {player}.");
 
                 foreach (OriginalSaveIntPair tile in world.Fog.FadeTilesByPlayer[player])
                 {
-                    if ((uint)tile.First >= (uint)world.Width || (uint)tile.Second >= (uint)world.Height)
+                    if (!world.ContainsArchivedTile(tile.First, tile.Second))
                     {
                         throw new InvalidDataException(
                             $"Original fog fade tile ({tile.First}, {tile.Second}) is outside the world.");

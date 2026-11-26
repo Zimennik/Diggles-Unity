@@ -17,6 +17,69 @@ namespace Diggles.Tests
 
     public sealed class OriginalSaveArchiveReaderTests
     {
+        [TestCase(0, 0)]
+        [TestCase(5, 2)]
+        public void RestoresArchivedRowsAtAbsoluteCoordinates(int minY, int firstStorageRow)
+        {
+            const int width = 2;
+            const int height = 3;
+            const int tileCount = width * height;
+            const int tileSize = 53;
+            const int tileStart = 24;
+            const int fogLists = tileStart + tileCount * tileSize + 40 + 8 + 8 + 16 + 1;
+            var payload = new byte[fogLists + 32 + 8];
+            using var stream = new MemoryStream(payload);
+            using var writer = new BinaryWriter(stream);
+            for (int i = 0; i < tileCount; i++)
+            {
+                stream.Position = tileStart + i * tileSize;
+                writer.Write((uint)(i + 1));
+                stream.Position += 41;
+                writer.Write((byte)(20 + i));
+            }
+
+            int firstRecord = firstStorageRow * width;
+            foreach (int record in new[] { firstRecord, (firstRecord + width) % tileCount })
+            {
+                stream.Position = tileStart + record * tileSize + 17;
+                writer.Write(1u << 24); // Live buffer 1 contains water.
+                writer.Write(0u);
+                writer.Write(0.5f);
+            }
+            stream.Position = fogLists;
+            writer.Write(1);
+            writer.Write(0);
+            writer.Write(minY);
+
+            var metadata = ConstructInternal<OriginalSaveWorldMetadata>(
+                0L, (long)payload.Length, width, height, 0, minY, width, minY + height,
+                tileCount, 0, 0, new int[4], new[] { 1, 0, 0, 0, 0, 0, 0, 0 });
+            var world = ConstructInternal<OriginalSaveWorldDocument>(payload, metadata);
+            var snapshot = ConstructInternal<OriginalSaveRuntimeWorldSnapshot>(world);
+
+            var terrain = snapshot.CreateWorldResult();
+            var fog = snapshot.CreateFogState();
+            var fluid = snapshot.CreateFluidState();
+            uint[] expectedBlocks = firstStorageRow == 0
+                ? new uint[] { 1, 2, 3, 4, 5, 6 }
+                : new uint[] { 5, 6, 1, 2, 3, 4 };
+            int firstTile = minY * width;
+            Assert.That(terrain.RenderYMin, Is.EqualTo(minY));
+            Assert.That(terrain.Height, Is.EqualTo(minY + height));
+            Assert.That(terrain.BlockIdx.Take(firstTile), Is.All.EqualTo(0u));
+            Assert.That(terrain.BlockIdx.Skip(firstTile), Is.EqualTo(expectedBlocks));
+            Assert.That(fog.Fog[firstTile * 8], Is.EqualTo(20 + firstRecord));
+            Assert.That(fog.FadeItems, Is.EqualTo(new[] { firstTile }));
+            Assert.That(fluid.Cells.Select(cell => cell.Y), Is.EqualTo(new[] { minY, minY + 1 }));
+            Assert.That(fluid.Cells[0].Fill, Is.EqualTo(0.5f));
+            Assert.That(snapshot.FluidCompatibility.TileCount, Is.EqualTo(tileCount));
+        }
+
+        private static T ConstructInternal<T>(params object[] arguments) =>
+            (T)Activator.CreateInstance(typeof(T),
+                System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic,
+                null, arguments, null)!;
+
         [Test]
         public void ReadsOriginalTutorialSaveThroughWorldBoundary()
         {

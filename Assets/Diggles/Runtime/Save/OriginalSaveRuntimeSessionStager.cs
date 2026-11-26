@@ -2314,8 +2314,9 @@ namespace Diggles.Runtime.Save
                     return false;
                 }
             }
+            // The compatibility sidecar retains the compact archive layout.
             return source.RuntimeWorld.FluidCompatibility.TileCount ==
-                checked(source.RuntimeWorld.Width * source.RuntimeWorld.Height);
+                source.SourceDocument.World.Terrain.Count;
         }
 
         private static bool ActionContinuationsWereInstalled(

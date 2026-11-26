@@ -31,8 +31,9 @@ namespace Diggles.Runtime.Save
         internal OriginalSaveRuntimeWorldSnapshot(OriginalSaveWorldDocument world)
         {
             if (world == null) throw new ArgumentNullException(nameof(world));
-            Width = world.Width;
-            Height = world.Height;
+            world.ValidateRuntimeBounds();
+            Width = world.RuntimeWidth;
+            Height = world.RuntimeHeight;
             MinX = world.MinX;
             MinY = world.MinY;
             MaxXExclusive = world.MaxXExclusive;
@@ -52,12 +53,22 @@ namespace Diggles.Runtime.Save
             _digOrderIds = new uint[tileCount];
             _hasTemplate = new bool[tileCount];
             _fog = new byte[checked(tileCount * FogOfWarState.Players)];
+            if (world.HasOffset)
+            {
+                // Entity, camera and script coordinates stay absolute. Rows above MinY no
+                // longer exist natively; the port pads them as solid and hidden
+                // (approximation, not taken from the native code).
+                Array.Fill(_terrainBytes, TerrainByte(0));
+                Array.Fill(_navigationStates, (byte)0xff);
+            }
 
             var fluidCells = new List<FluidSystem.CellSaveState>();
             const int authoritativeFluidBuffer = 1;
-            for (int index = 0; index < tileCount; index++)
+            for (int archiveIndex = 0; archiveIndex < world.Terrain.Count; archiveIndex++)
             {
-                OriginalSaveTerrainTile tile = world.Terrain[index];
+                world.ArchivedTileOf(archiveIndex, out int x, out int y);
+                int index = y * Width + x;
+                OriginalSaveTerrainTile tile = world.Terrain[archiveIndex];
                 _blockIndices[index] = tile.BlockIndex;
                 _terrainBytes[index] = TerrainByte(tile.MaterialType);
                 _cellIds[index] = tile.CellId;
@@ -84,8 +95,8 @@ namespace Diggles.Runtime.Save
                 {
                     fluidCells.Add(new FluidSystem.CellSaveState
                     {
-                        X = index % Width,
-                        Y = index / Width,
+                        X = x,
+                        Y = y,
                         Fill = fill,
                         TypeMask = type,
                     });
@@ -93,8 +104,10 @@ namespace Diggles.Runtime.Save
             }
 
             _fogBeginRows = Copy(world.FogBeginRows);
-            BuildFogLists(world, out _fadeOffsets, out _fadeItems);
+            BuildFogLists(world, Width, out _fadeOffsets, out _fadeItems);
             _exploredRect = BuildExploredRect(_fog, Width, Height);
+            if (world.HasOffset)
+                fluidCells.Sort((a, b) => a.Y != b.Y ? a.Y.CompareTo(b.Y) : a.X.CompareTo(b.X));
             _fluid = BuildFluidState(world.Fluid, fluidCells);
             FluidCompatibility = new OriginalFluidCompatibilityState(world);
         }
@@ -151,8 +164,8 @@ namespace Diggles.Runtime.Save
                 MarkY1 = markY1,
                 Voxels = (byte[])voxels.Clone(),
                 HasTemplate = (bool[])_hasTemplate.Clone(),
-                RenderXMin = 0,
-                RenderYMin = 0,
+                RenderXMin = MinX,
+                RenderYMin = MinY,
                 RenderXMax = Width - 1,
                 RenderYMax = Height - 1,
             };
@@ -180,8 +193,8 @@ namespace Diggles.Runtime.Save
                 HasTpl = hasTemplate,
                 Voxels = new byte[checked(tileCount * PmpMap.SubGridLength)],
                 DugFloor = (bool[])_dugFloors.Clone(),
-                RenderXMin = 0,
-                RenderYMin = 0,
+                RenderXMin = MinX,
+                RenderYMin = MinY,
                 RenderXMax = Width - 1,
                 RenderYMax = Height - 1,
             };
@@ -281,6 +294,7 @@ namespace Diggles.Runtime.Save
 
         private static void BuildFogLists(
             OriginalSaveWorldDocument world,
+            int width,
             out int[] offsets,
             out int[] items)
         {
@@ -296,7 +310,7 @@ namespace Diggles.Runtime.Save
             int cursor = 0;
             for (int player = 0; player < FogOfWarState.Players; player++)
                 foreach (OriginalSaveIntPair pair in world.Fog.FadeTilesByPlayer[player])
-                    items[cursor++] = checked(pair.Second * world.Width + pair.First);
+                    items[cursor++] = checked(pair.Second * width + pair.First);
         }
 
         private static int[] BuildExploredRect(byte[] fog, int width, int height)
